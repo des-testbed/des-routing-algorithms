@@ -1,0 +1,42 @@
+20091001 - optional "OGM precursor" mode with optimized route evaluation.
+	All OGM not containing ethernet address of processing host in processing list of OGM
+	are taken in database. Can be deactivated by setting
+		set ogmprecmode 0
+	in 'des-batman.cfg'
+
+20091128 - changed framework support to libdessert0.86
+
+20091214 - first public release
+
+20100102 - added logging of packet routing
+
+20100103 - routing logging data format changed
+
+20100104 - OGM Precursor BUG seems to be fixed
+
+20100109 - libdessert0.87
+
+20100116 - all outgoing packets are now uniquely identified with sequence number + src + dest
+
+20100120 - new feature to avoid routing loops in OGM Precursor mode added.
+		 - rl_seq_table is now managed over timeslot
+
+20100910 - Updated Makefile and configuration files
+
+20101006 - Added TTL decrease callback, incremented version to 1.2
+
+20110207 - cleared code e.g. deleted unused variables
+         - cli getter and setter for ogm_size and ogm_interval
+
+20110209 - minor changes
+         - time intervals now are specified in milliseconds
+
+20110301 - Added Android app files
+         - Released as 1.3
+
+20110306 - changing CLI "print" parameters to "show"
+         - adding CLI parameter to config file with comments
+         - unifying routing tables to the streucture: destination | next hop | out iface addr | daemon specifc
+
+20110321 - Added Android compatibility via #ifdef
+	 - Added the makefile target "android"

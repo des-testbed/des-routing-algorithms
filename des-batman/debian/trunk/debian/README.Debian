@@ -1,0 +1,6 @@
+des-batman for Debian
+---------------------
+
+* Added debconf configuration to upstream version
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 10 Sep 2010 10:32:40 +0200

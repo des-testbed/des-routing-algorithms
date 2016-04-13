@@ -1,0 +1,9 @@
+# Config file for package des-batman
+PIDFILE="/var/run/des-batman.pid"
+DAEMON_OPTS="/etc/des-batman.conf"
+TAP_NAME=tap0
+TAP_IP=$(calc_ip 4)
+TAP_NETMASK=255.255.0.0
+CLI_PORT=4519
+IFACE=wlan0
+LOGFILE="/var/log/des-batman.log"

@@ -1,0 +1,29 @@
+Source: des-batman
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Uploaders: Wladimir Degtjarew <wdegtjarew@googlemail.com>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.9.1
+Homepage: http://www.des-testbed.net/
+
+Package: des-batman
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: B.A.T.M.A.N. routing daemon based on libdessert
+ Implementation of the Better Approach To Mobile Ad-hoc Networking
+ (B.A.T.M.A.N.) routing protocol based on version 2 of the Internet-Draft. The
+ des-batman daemon can also be configured in the "OGM precursor mode" (OPM)
+ where received OGMs are also accepted when they have the same sequence number
+ as the latest OGM from the source but are received from a different neighbor.
+ Although loops can be the result, this variant showed higher performance in
+ experiments.
+
+Package: des-batman-dbg
+Architecture: any
+Section: debug
+Depends: des-batman (= ${binary:Version}), ${misc:Depends}
+Description: B.A.T.M.A.N. routing daemon based on libdessert (debugging symbols)
+ Debugging symbols for the B.A.T.M.A.N. routing daemon based on the DES-SERT
+ routing framework. You only need this package to debug des-batman, e.g.,
+ when a segmentation fault is encountered.

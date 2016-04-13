@@ -1,0 +1,23 @@
+des-batman (1.3-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 01 Mar 2011 13:12:08 +0100
+
+des-batman (1.2-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 06 Oct 2010 16:25:49 +0200
+
+des-batman (1.1-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 10 Sep 2010 11:32:47 +0200
+
+des-batman (1.0-1) stable; urgency=low
+
+  * Initial release
+
+ -- Wladimir Degtjarew <wdegtjarew@googlemail.com>  Sat, 01 May 2010 00:01:25 +0200

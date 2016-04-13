@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchOptions>
+
+	<Spacer description="Routing Options"/>
+	<Integer name="ogmint" default="2" minValue="0" description="OGM Interval (in seconds)" />
+	<Boolean name="ogmprecmode" default="true" trueValue="1" falseValue="0" description="Use OGM Precursor" />
+	<Integer name="windowsize" default="20" minValue="0" maxValue="255" description="Window Size" />
+	<Boolean name="resendogmalways" default="true" trueValue="1" falseValue="0" description="Forward all OGMs" />
+
+
+	<Spacer description="Logging"/>
+	<List name="loglevel" default="info" description="Log Level">
+		<Item value="debug"/>
+		<Item value="info"/>
+		<Item value="notice"/>
+		<Item value="warning"/>
+		<Item value="error"/>
+		<Item value="critical"/>
+		<Item value="mergency"/> <!-- full name is not used at all instead the first character counts -->
+	</List>
+	<Boolean name="verbose" default="false" trueValue="1" falseValue="0" description="Verbose Messages" />
+	<Boolean name="useRingbuffer" default="true" trueValue="" falseValue="! " description="Use ringbuffer logging" />
+	<Integer name="ringbufferSize" default="64" minValue="1" maxValue="128" description="Ringbuffer size" />
+
+
+</LaunchOptions>
