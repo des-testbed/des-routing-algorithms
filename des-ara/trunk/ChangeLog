@@ -1,0 +1,66 @@
+20110317 - version 2.1
+    - Implemented workarounds for Android compatibility
+
+20110301 - version 2.0
+    - Added feature to print routing table periodically to the log file
+    - Added adaptive evaporation to force faster reduction of alternative routes
+    - Fixed bug in the PASSIVE acknowledgement mode
+    - Added LINEAR pheromone trail mode (linear increase and evaporation)
+    - Fixed null pointer bug in ara_rt_modify_credit
+
+201007123 - version 1.9
+    - Added route pruning
+    - Added CLI callback to configure pruning
+    - Some code cleanup and documentation
+    - Added several CLI callbacks to flush data structures
+    - Added passive acknowledgements and corresponding CLI callbacks
+    - Added network layer acknowledgements and corresponding CLI callbacks
+    - Prepared to include link layer acknowledgements
+    - The packet trap delay has been made more fine granular: seconds -> milli-seconds
+    - Prefixed several CLI commands with "ara_"
+    - New routing table intries will immediately untrap all corresponding packets
+    - Added mode to increase the pheromone value only in forward direction
+    - Cleaned up route fail handling
+    - Added credit for missed ACKs in PASSIVE acknowledgement mode; also added corrsponding CLI commands
+    - packets returned to the source with route fail flag without alternative route will now generate a FANT and trap the packet
+    - Added TODO file
+    - Removed sequence number from routing table entries as it was not used and make no sense here (see loop protection table)
+    - Restructured routing table in two parts: 1) element in hashmap with a 2) list of next hops
+
+201007122 - version 1.8
+    - Fixed bug in route selection
+    - Added random route selection
+
+201007122 - version 1.7
+    - Fixed bug in loop detection
+
+201007122 - version 1.6
+    - Multi-path routing should no work
+    - Added CLI command to flush routing table
+    - Added node disjoint mode
+    - Added CLI command to enable/disable node disjoint mode
+
+201007121 - version 1.5
+    - Improved multi-path routing
+
+20100719 - version 1.4
+    - Some shared meshif and sysif callbacks have been split
+    - Some code cleanup
+
+20100716 - version 1.3
+    - Do not drop duplicated packets for yourself
+
+20100715 - version 1.2
+    - The CLI is gives much more feedback when configuring parameters
+    - Raised the log level of several messages from info to notice
+    - Added CLI callbacks to show current forward and pheromone trail mode
+    - Moved ara_forw_mode from ara_cli.c to ara_rt.c
+
+20100713 - version 1.1
+    - ARA and ARAC are now merged; the new protocol string is ARAX; added CLI callback to select pheromone trail mode
+    - It is now ensured, that an ANT is always flooded backwards first, e.g., when an implicit FANT (for example ARP request) arrives and an unicast is send backwards.
+    - Added missing callback to hande route lookup failures in sys callback pipeline
+    - Moved BANT sending code into dedicated function.
+    - Added several CLI callbacks to configure the cubic pheromone trail creation, aging, and maintenance
+    - Added several CLI callbacks to show the current configuration
+    - Corrected some spelling mistakes

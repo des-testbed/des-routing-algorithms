@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchOptions>
+
+	<Spacer description="Retry Options"/>
+	<Integer name="ara_retry_delay_ms" default="150" minValue="0" description="Retry Timeout (in ms)" />
+	<Integer name="ara_retry_max" default="5" minValue="0" maxValue="255" description="Retry Count" />
+
+
+	<Spacer description="ARA Mode Options"/>
+	<List name="ara_forw_mode" default="WEIGHTED" description="Forward Mode">
+		<Item value="BEST"/>
+		<Item value="WEIGHTED"/>
+		<Item value="RANDOM"/>
+	</List>
+	<List name="ara_ptrail_mode" default="CUBIC" description="p-Trail Mode Mode">
+		<Item value="CLASSIC"/>
+		<Item value="CUBIC"/>
+	</List>
+	<List name="ara_ack_mode" default="PASSIVE" description="Acknowledgement Mode">
+		<Item value="LINK"/>
+		<Item value="PASSIVE"/>
+		<Item value="NETWORK"/>
+		<Item value="DISABLED"/>
+	</List>
+
+
+	<Spacer description="Pheromone Options"/>
+	<Boolean name="ara_backwards_inc" default="true" trueValue="on" falseValue="off" description="Node Backwards Pheromone Increase" />
+	<Boolean name="ara_ndisjoint" default="true" trueValue="on" falseValue="off" description="Node Disjoint Route Discovery" />
+	<Decimal name="ara_prune_routes" default="2.0" minValue="1" description="Prune Alternative Long Routes (0 disables pruning)" />
+	<Boolean name="ara_rtprob_bants" default="false" trueValue="on" falseValue="off" description="Route Problem BANTs" />
+	<Integer name="ara_pant_interval" default="0" minValue="0" maxValue="255" description="PANT Interval (0 disables PANTs)" />
+	<Boolean name="ara_adap_evaporation" default="false" trueValue="on" falseValue="off" description="Adaptive Evaporation" />
+
+
+	<Spacer description="Acknowledgement Options"/>
+	<Integer name="ara_ack_wait_ms" default="150" minValue="0" description="Acknowledgement Timeout (in ms)" />
+	<Integer name="ara_ack_miss_credit" default="5" minValue="0" maxValue="255" description="Acknowledgement Miss Credit" />
+	<Decimal name="ara_ack_credit_inc" default="1.0" minValue="0" description="Credit Increment Step" />
+
+
+	<Spacer description="Routing Options"/>
+	<Decimal name="ara_rt_min_pheromone" default="0.1" minValue="0" maxValue="1" description="Minimum Value" />
+	<Decimal name="ara_rt_initial" default="0.5" minValue="0" maxValue="1" description="Initial Value" />
+	<Decimal name="ara_rt_inc" default="0.04" minValue="0" maxValue="1" description="Increment Step" />
+	<Decimal name="ara_rt_delta_q" default="0.05" minValue="0" maxValue="1" description="Delta Q" />
+	<Integer name="ara_rt_tick_interval" default="3" minValue="0" description="Tick Interval" />
+
+
+	<Spacer description="Broadcast Options"/>
+	<Integer name="ara_trace_broadcastlen" default="512" minValue="0" description="Broadcast Length" />
+
+
+	<Spacer description="Logging"/>
+	<List name="loglevel" default="info" description="Log Level">
+		<Item value="debug"/>
+		<Item value="info"/>
+		<Item value="notice"/>
+		<Item value="warning"/>
+		<Item value="error"/>
+		<Item value="critical"/>
+		<Item value="mergency"/><!-- full name is not used at all instead the first character counts -->
+	</List>
+	<Boolean name="useRingbuffer" default="true" trueValue="" falseValue="! " description="Use ringbuffer logging" />
+	<Integer name="ringbufferSize" default="64" minValue="1" maxValue="128" description="Ringbuffer size" />
+</LaunchOptions>

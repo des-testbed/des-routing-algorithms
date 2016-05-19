@@ -1,0 +1,147 @@
+des-ara (2.0-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 01 Mar 2011 13:34:33 +0100
+
+des-ara (1.9-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Sat, 24 Jul 2010 22:09:11 +0200
+
+des-ara (1.8-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 22 Jul 2010 17:12:32 +0200
+
+des-ara (1.7-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 22 Jul 2010 11:32:17 +0200
+
+des-ara (1.6-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 22 Jul 2010 10:05:24 +0200
+
+des-ara (1.5-2) stable; urgency=low
+
+  * Fixing sime bug 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 21 Jul 2010 15:06:29 +0200
+
+des-ara (1.5-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 21 Jul 2010 13:20:24 +0200
+
+des-ara (1.4-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Mon, 19 Jul 2010 17:42:55 +0200
+
+des-ara (1.3-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 16 Jul 2010 19:09:37 +0200
+
+des-ara (1.2-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 15 Jul 2010 09:24:12 +0200
+
+des-ara (1.1-1) stable; urgency=low
+
+  * New upstream release
+  * Added log file conf to debconf
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 13 Jul 2010 12:46:59 +0200
+
+des-ara (1.0-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 13 Jul 2010 11:09:02 +0200
+
+des-ara (0.7-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Mon, 07 Jun 2010 16:35:03 +0200
+
+des-ara (0.6-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 31 Mar 2010 12:49:31 +0200
+
+des-ara (0.5-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 04 Mar 2010 16:42:29 +0100
+
+des-ara (0.3-5) stable; urgency=low
+
+  * Corrected error in template file. 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Mon, 22 Feb 2010 15:00:58 +0100
+
+des-ara (0.3-4) stable; urgency=low
+
+  * Config file was not included 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 17 Feb 2010 13:28:42 +0100
+
+des-ara (0.3-3) stable; urgency=low
+
+  * Forgot posinst imports 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 17 Feb 2010 12:57:28 +0100
+
+des-ara (0.3-2) stable; urgency=low
+
+  * Building for lenny 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 17 Feb 2010 12:02:01 +0100
+
+des-ara (0.3-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 17 Feb 2010 11:22:30 +0100
+
+des-ara (0.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Removed init and default file - now included in upstream
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 09 Jul 2009 14:35:33 +0200
+
+des-ara (0.1-3) unstable; urgency=low
+
+  * Added LSB header to init script
+  * update-rc.d does not create links to init script in runlevel 2-5 anymore 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 09 Jun 2009 17:46:58 +0200
+
+des-ara (0.1-2) unstable; urgency=low
+
+  * Added init script
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 09 Jun 2009 15:59:12 +0200
+
+des-ara (0.1-1) unstable; urgency=low
+
+  * Initial release 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 05 Jun 2009 17:29:01 +0200
+ 

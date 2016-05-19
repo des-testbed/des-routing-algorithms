@@ -1,0 +1,39 @@
+Source: des-ara
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.8.4
+Homepage: http://www.des-testbed.net/des-sert
+
+Package: des-ara
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Ant Routing Algorithm (ARA) Protocol Daemon
+ Ant routing based on the Ant Routing Algorithm (ARA) protocol.
+ The daemon is implemented with the Distributed Embedded Systems
+ Simple and Extensible Routing Framework for Testbeds (DES-SERT)
+ .
+ This package contains the routing daemon.
+
+Package: des-ara-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, des-ara (= ${binary:Version})
+Description: Ant Routing Algorithm (ARA) Protocol Daemon (debugging symbols)
+ Ant routing based on the Ant Routing Algorithm (ARA) protocol.
+ The daemon is implemented with the Distributed Embedded Systems
+ Simple and Extensible Routing Framework for Testbeds (DES-SERT)
+ .
+ This package contains the debugging symbols.
+
+Package: des-ara-dissectors
+Architecture: all
+Depends: ${misc:Depends}, wireshark-common
+Description: Ant Routing Algorithm (ARA) Protocol Daemon (wireshark dissectors)
+ Ant routing based on the Ant Routing Algorithm (ARA) protocol.
+ The daemon is implemented with the Distributed Embedded Systems
+ Simple and Extensible Routing Framework for Testbeds (DES-SERT)
+ .
+ This package contains a wireshark dissector for the extensions used by the
+ routing daemon.

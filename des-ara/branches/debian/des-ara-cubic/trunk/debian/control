@@ -1,0 +1,15 @@
+Source: des-ara-cubic
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.8.4
+Homepage: http://www.des-testbed.net/des-sert
+
+Package: des-ara-cubic
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Ant Routing Algorithm (ARA) Protocol Daemon
+ Ant routing based on the Ant Routing Algorithm (ARA) protocol.
+ The daemon is implemented with the Distributed Embedded Systems
+ Simple and Extensible Routing Framework for Testbeds (DES-SERT)

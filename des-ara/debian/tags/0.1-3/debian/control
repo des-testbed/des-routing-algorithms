@@ -1,0 +1,15 @@
+Source: des-ara
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.1
+Homepage: http://www.des-testbed.net/des-sert
+
+Package: des-ara
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dessert-tools
+Description: Ant Routing Algorithm (ARA) Protocol Daemon
+ Ant routing based on the Ant Routing Algorithm (ARA) protocol.
+ The daemon is implemented with the Distributed Embedded Systems
+ Simple and Extensible Routing Framework for Testbeds (DES-SERT)

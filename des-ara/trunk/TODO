@@ -1,0 +1,21 @@
+TODO List
+
+- ? - route fail handling
+
+- ara_retrypacket(): review code; is something missing?
+
+- ara_handle_ack_request(): Currently the ACK reply is sent over the same interface the request was received. Maybe the routing table should be queried for the best link or the reply sent over all link?!?
+
+- main.c: Maybe a special ANT should be flooded when a node receives a SIGTERM
+
+- cli_set_ara_ack_mode(), ara_ack_tick(), ara_ack.c: implement support for link layer acknowledgements
+
+- ara_ack_tick(): If no ACK is received in PASSIVE mode, the last hop is currently treated as an intermediate node. This means that the credit has to be spent before the routing table entry is removed. As network layer acknowledgements are used on the last hop which are transmitted by the DLL in a reliable way with multiple re-transmission, we might keep the routing entry too long in case of a bad link.
+
+- ara_ack_eval_packet(): Which value should be used to increment the pheromone value in the forward direction in the CLASSIC mode??? The TLL of the packet is not available anymore (could be saved) and it is not a good metric in the forward direction, as it is a measure of the hop distance from the source.
+
+- ara_rt_update(): When route pruning is enabled, alternative paths are never added when they are significantly longer than the shortest path. Further on, the pheromone value is not increased (in backwards direction) for packets received over too long routes. Maybe pruning should be only active for ANTs???
+
+- ?: Count the number of received packets form a source per time unit. The evaporation rate should be adapted to this value to ensure that we throw again the worst routes fast on high traffic load and keep routing table entries on nodes that are rarely used - otherwise we might generate route fail messages very often in the latter case.
+
+- ?: Consider that we maybe should introduce an upper limit of routing table entries for each destination. Initially all next hops could be stored and than the number successively be reduced to a "good" value.

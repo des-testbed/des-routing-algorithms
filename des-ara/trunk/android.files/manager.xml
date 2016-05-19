@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagerOptions>
+
+	<!--
+SHOWS @ DEFAULT PRIVILEGED
+	show dessert-info    			Display information about this program.
+	show logging         			show logging ringbuffer
+	show loglevel        			show loglevel
+	show meshifs        			Print list of registered interfaces used by the daemon.
+	show sysif           			Print the name of the TUN/TAP interface used as system interface.
+	show ara_ack_mode    			show acknowledgement mode
+	show ara_ack_miss_credit 		show ara_ack_miss_credit
+	show ara_ack_credit_inc 		show ara_ack_credit_inc
+	show ara_prune_routes 			show route pruning length
+	show ara_pant_interval 			show PANT interval
+	show ara_ack_wait_ms 			show acknowledgement timeout
+	show ara_ndisjoint   			show node disjoint setting
+	show ara_adap_evaporation 		show adaptive evaporation setting
+	show ara_backwards_inc 			show backwards pheromone increase setting
+	show ara_rtprob_bants 			show route problem BANT mode
+	show ara_retry_delay_ms 		show retry delay for trapped packets
+	show ara_retry_max   			show ara_retry_max
+	show ara_forw_mode  	 		show forward mode
+	show ara_ptrail_mode			show pheromone trail mode
+	show ara_rt_min_pheromone		show rt_min_pheromone
+	show ara_rt_initial  			show rt_initial
+	show ara_rt_delta_q  			show rt_delta_q
+	show ara_rt_inc      			show rt_inc
+	show ara_rt_tick_interval 		show rt_tick_interval
+	show ara_trace_broadcastlen 	show ara_trace_broadcastlen
+	show ara_print_rt_interval_s 	show ara_print_rt_interval_s setting
+	show ara_config      			show ARA configuration
+	show packettrap      			show packet trap
+	show routing table   			show the routing table
+	show ack monitor     			show packets waiting for acknowledgement
+	show loopprotect table 			show the loopprotect history
+	show loopprotect statistics 	show the loopprotect statistics
+
+SETS @ CONFIG
+	interface sys        			initialize tap interface
+	interface mesh       			initialize mesh interface
+	no logging ringbuffer 		disable logging to ringbuffer
+	no logging file      			set logfile disable file logging
+	no packetdump        			stop packet dump
+	loglevel             			set the loglevel [(d)ebug, (i)nfo, (n)otice, (w)arning, (e)rror, (c)ritical, e(m)ergency]
+	logging ringbuffer   			set logging ringbuffer size (in lines)
+	logging file         			set logfile and enable file logging
+	port                 			configure TCP port the daemon is listening on
+	pid                  			write process id to file
+	set ara_ack_mode     			set acknowledgement mode
+	set ara_ack_miss_credit 		set how many ACK may be missed
+	set ara_ack_credit_inc 			set value to increase credit on ACK
+	set ara_prune_routes 			prune alternative routes
+	set ara_pant_interval 			set PANT interval
+	set ara_ack_wait_ms  			set timeout for acknowledgements
+	set ara_ndisjoint    			enable/disable node disjoint route discovery
+	set ara_adap_evaporation 		enable/disable adaptive evaporation
+	set ara_backwards_inc 			enable/disable node backwards pheromone increase
+	set ara_rtprob_bants 			enable/disable route problem BANTs
+	set ara_retry_delay_ms 			set ara_retry_delay_ms
+	set ara_retry_max    			set ara_retry_max
+	set ara_forw_mode    			set ara_forw_mode
+	set ara_ptrail_mode  			set pheromone trail mode
+	set ara_rt_min_pheromone 		set rt_min_pheromone
+	set ara_rt_initial   			set rt_initial
+	set ara_rt_delta_q   			set rt_delta_q
+	set ara_rt_inc       			set rt_inc
+	set ara_rt_tick_interval 		set rt_tick_interval
+	set ara_trace_broadcastlen 		set ara_trace_broadcastlen
+	set ara_print_rt_interval_s 	set ara_print_rt_interval_s
+	packetdump           			start packet dump
+	flush routing table  			flush routing table
+	flush ack monitor    			flush ack monitor
+	flush loop protection 			flush loop protection table
+	flush rmnt           			flush route management table
+	flush all            			flush all data structures
+-->
+
+
+	<Spacer description="Daemon Information"/>
+	<Command description="ARA Configuration Overview">
+		<CommandLine value="show ara_config" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Packet Trap">
+		<CommandLine value="show packettrap" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Routing Table">
+		<CommandLine value="show routing table" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="ACK Monitor">
+		<CommandLine value="show ack monitor" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Loop Protect History">
+		<CommandLine value="show loopprotect table" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Loop Protect Statistics">
+		<CommandLine value="show loopprotect statistics" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+
+
+	<Spacer description="Flushes"/>
+	<Command description="Flush Routing Table">
+		<CommandLine value="flush routing table" mode="CONFIG"/>
+	</Command>
+	<Command description="Flush ACK Monitor">
+		<CommandLine value="flush ack monitor" mode="CONFIG"/>
+	</Command>
+	<Command description="Flush Loop Protection">
+		<CommandLine value="flush loop protection" mode="CONFIG"/>
+	</Command>
+	<Command description="Flush Route Management Table">
+		<CommandLine value="flush rmnt" mode="CONFIG"/>
+	</Command>
+	<Command description="Flush All Data Structures">
+		<CommandLine value="flush all" mode="CONFIG"/>
+	</Command>
+
+
+	<Spacer description="Retry Options"/>
+	<Property description="Retry Timeout">
+		<GetterCommand>
+			<CommandLine value="show ara_retry_delay_ms" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_retry_delay_ms %value%" mode="CONFIG"/>		
+			<IntegerOption name="value" minValue="0" description="Retry Timeout (in ms)"/>
+		</SetterCommand>
+	</Property>  
+	<Property description="Retry Count">
+		<GetterCommand>
+			<CommandLine value="show ara_retry_max" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_retry_max %value%" mode="CONFIG"/>		
+			<IntegerOption name="value" minValue="0" maxValue="255" description="Retry Count"/>
+		</SetterCommand>
+	</Property>  
+
+
+	<Spacer description="ARA Mode Options"/>
+	<Property description="Forward Mode">
+		<GetterCommand>
+			<CommandLine value="show ara_forw_mode" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_forw_mode %value%" mode="CONFIG"/>		
+			<ListOption name="value" description="Forward Mode">
+				<Item value="BEST"/>
+				<Item value="WEIGHTED"/>
+				<Item value="RANDOM"/>
+			</ListOption>
+		</SetterCommand>
+	</Property>  
+	<Property description="p-Trail Mode Mode">
+		<GetterCommand>
+			<CommandLine value="show ara_ptrail_mode" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ptrail_mode %value%" mode="CONFIG"/>		
+			<ListOption name="value" description="p-Trail Mode Mode">
+				<Item value="CLASSIC"/>
+				<Item value="CUBIC"/>
+			</ListOption>			
+		</SetterCommand>
+	</Property>  
+	<Property description="Acknowledgement Mode">
+		<GetterCommand>
+			<CommandLine value="show ara_ack_mode" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ack_mode %value%" mode="CONFIG"/>		
+			<ListOption name="value" description="Acknowledgement Mode">
+				<Item value="LINK"/>
+				<Item value="PASSIVE"/>
+				<Item value="NETWORK"/>
+				<Item value="DISABLED"/>
+			</ListOption>			
+		</SetterCommand>
+	</Property>  
+
+
+	<Spacer description="Pheromone Options"/>
+	<Property description="Node Backwards Pheromone Increase">
+		<GetterCommand>
+			<CommandLine value="show ara_backwards_inc" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_backwards_inc %value%" mode="CONFIG"/>		
+			<BooleanOption name="value" trueValue="on" falseValue="off" description="Node Backwards Pheromone Increase"/>
+		</SetterCommand>
+	</Property>  
+	<Property description="Node Disjoint Route Discovery">
+		<GetterCommand>
+			<CommandLine value="show ara_ndisjoint" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ndisjoint %value%" mode="CONFIG"/>
+			<BooleanOption name="value" trueValue="on" falseValue="off" description="Node Disjoint Route Discovery"/>			
+		</SetterCommand>
+	</Property> 
+	<Property description="Prune Alternative Long Routes">
+		<GetterCommand>
+			<CommandLine value="show ara_prune_routes" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_prune_routes %value%" mode="CONFIG"/>		
+			<DecimalOption name="value" minValue="1" description="Prune Alternative Long Routes (0 disables pruning)"/>
+		</SetterCommand>
+	</Property>  
+	<Property description="Route Problem BANTs">
+		<GetterCommand>
+			<CommandLine value="show ara_rtprob_bants" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rtprob_bants %value%" mode="CONFIG"/>	
+			<BooleanOption name="value" trueValue="on" falseValue="off" description="Route Problem BANTs" />			
+		</SetterCommand>
+	</Property>  
+	<Property description="PANT Interval">
+		<GetterCommand>
+			<CommandLine value="show ara_pant_interval" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_pant_interval %value%" mode="CONFIG"/>	
+			<IntegerOption name="value" minValue="0" maxValue="255" description="PANT Interval (0 disables PANTs)"/>			
+		</SetterCommand>
+	</Property>   
+	<Property description="Adaptive Evaporation">
+		<GetterCommand>
+			<CommandLine value="show ara_adap_evaporation" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_adap_evaporation %value%" mode="CONFIG"/>	
+			<BooleanOption name="value"  trueValue="on" falseValue="off" description="Adaptive Evaporation" />			
+		</SetterCommand>
+	</Property>  
+
+
+	<Spacer description="Acknowledgement Options"/>
+	<Property description="Acknowledgement Timeout">
+		<GetterCommand>
+			<CommandLine value="show ara_ack_wait_ms" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ack_wait_ms %value%" mode="CONFIG"/>	
+			<IntegerOption name="value" minValue="0" description="Acknowledgement Timeout (in ms)"/>			
+		</SetterCommand>
+	</Property>  
+	<Property description="Acknowledgement Miss Credit">
+		<GetterCommand>
+			<CommandLine value="show ara_ack_miss_credit" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ack_miss_credit %value%" mode="CONFIG"/>		
+			<IntegerOption name="value" minValue="0" maxValue="255" description="Acknowledgement Miss Credit"/>
+		</SetterCommand>
+	</Property>  
+	<Property description="Credit Increment Step">
+		<GetterCommand>
+			<CommandLine value="show ara_ack_credit_inc" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_ack_credit_inc %value%" mode="CONFIG"/>	
+			<DecimalOption name="value" minValue="0" description="Credit Increment Step"/>			
+		</SetterCommand>
+	</Property>  
+
+
+	<Spacer description="Routing Options"/>
+	<Property description="Minimum Value">
+		<GetterCommand>
+			<CommandLine value="show ara_rt_min_pheromone" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rt_min_pheromone %value%" mode="CONFIG"/>	
+			<DecimalOption name="value"  minValue="0" maxValue="1" description="Minimum Value" />			
+		</SetterCommand>
+	</Property>  
+	<Property description="Initial Value">
+		<GetterCommand>
+			<CommandLine value="show ara_rt_initial" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rt_initial %value%" mode="CONFIG"/>	
+			<DecimalOption name="value"  minValue="0" maxValue="1" description="Initial Value" />			
+		</SetterCommand>
+	</Property>  
+	<Property description="Increment Step">
+		<GetterCommand>
+			<CommandLine value="show ara_rt_inc" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rt_inc %value%" mode="CONFIG"/>		
+			<DecimalOption name="value" minValue="0" maxValue="1" description="Increment Step" />			
+		</SetterCommand>
+	</Property>  
+	<Property description="Delta Q">
+		<GetterCommand>
+			<CommandLine value="show ara_rt_delta_q" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rt_delta_q %value%" mode="CONFIG"/>	
+			<DecimalOption name="value" minValue="0" maxValue="1" description="Delta Q" />			
+		</SetterCommand>
+	</Property>  	
+	<Property description="Tick Interval">
+		<GetterCommand>
+			<CommandLine value="show ara_rt_tick_interval" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_rt_tick_interval %value%" mode="CONFIG"/>	
+			<IntegerOption name="value"  minValue="0" description="Tick Interval" />			
+		</SetterCommand>
+	</Property>  
+
+
+	<Spacer description="Broadcast Options"/>
+	<Property description="Broadcast Length">
+		<GetterCommand>
+			<CommandLine value="show ara_trace_broadcastlen" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="set ara_trace_broadcastlen %value%" mode="CONFIG"/>		
+			<IntegerOption  name="value" minValue="0" description="Broadcast Length" />
+		</SetterCommand>
+	</Property>
+
+
+	<Spacer description="Logging"/>
+	<Command description="Show Logging">
+		<CommandLine value="show logging" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Property description="Log Level">
+		<GetterCommand>
+			<CommandLine value="show loglevel" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="loglevel %level%" mode="CONFIG"/>
+			<ListOption name="level" description="Log Level">
+				<Item value="debug"/>
+				<Item value="info"/>
+				<Item value="notice"/>
+				<Item value="warning"/>
+				<Item value="error"/>
+				<Item value="critical"/>
+				<Item value="mergency"/>
+				<!-- full name is not used at all instead the first character counts -->
+			</ListOption>				
+		</SetterCommand>
+	</Property>
+	<Command description="Disable Ringbuffer Logging">
+		<CommandLine value="no logging ringbuffer" mode="CONFIG"/>
+	</Command>
+	<Command description="Enable Ringbuffer Logging">
+		<CommandLine value="logging ringbuffer %max_lines%" mode="CONFIG"/>
+		<IntegerOption name="max_lines" minValue="1" maxValue="64" description="Lines to log"/>
+	</Command>
+
+
+	<Spacer description="Interface Settings"/>		
+	<Property description="Mesh Interfaces">
+		<GetterCommand>
+			<CommandLine value="show meshifs" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="interface mesh %if%" mode="CONFIG"/>
+			<StringOption name="if" description="Interface (e.g. wlan0)"/>
+		</SetterCommand>
+	</Property>
+	<Property description="System Interface">
+		<GetterCommand>
+			<CommandLine value="show sysif" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="interface sys %if% %ip% %mask% %mtu%" mode="CONFIG"/>
+			<StringOption name="if" description="Interface (e.g. tap0)"/>
+			<StringOption name="ip" description="IP (e.g. 192.168.5.99)"/>
+			<StringOption name="mask" description="Netmask (e.g. 255.255.255.0)"/>
+			<IntegerOption name="mtu" minValue="576" maxValue="1500" description="MTU (optional)"/>
+		</SetterCommand>
+	</Property>
+
+
+	<Spacer description="Informational"/>	
+	<Command description="Show Dessert-Info">
+		<CommandLine value="show dessert-info" mode="DEFAULT|PRIVILEGED"/>
+	</Command>		
+	<Command description="Command History">
+		<CommandLine value="history" mode="DEFAULT|PRIVILEGED|CONFIG"/>
+	</Command>
+
+
+</ManagerOptions>
