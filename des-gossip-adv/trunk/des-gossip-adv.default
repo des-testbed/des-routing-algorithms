@@ -1,0 +1,9 @@
+# Config file for package des-gossip-adv
+PIDFILE="/var/run/des-gossip-adv.pid"
+DAEMON_OPTS="/etc/des-gossip-adv.conf"
+TAP_NAME=tap0
+TAP_IP=10.0.0.1
+TAP_NETMASK=255.255.0.0
+CLI_PORT=4519
+IFACE=wlan0
+LOGFILE="/var/log/des-gossip-adv.log"

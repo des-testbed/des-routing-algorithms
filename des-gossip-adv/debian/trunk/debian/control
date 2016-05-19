@@ -1,0 +1,24 @@
+Source: des-gossip-adv
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@zedat.fu-berlin.de>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev (>= 1.6.1), uthash-dev
+Standards-Version: 3.9.1
+Homepage: http://wwww.des-testbed.net
+
+Package: des-gossip-adv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libdessert gossip-adv
+ This package is an gossip-adv daemon based on libdessert.
+ In contrast to des-gossip it supports TTL and has a simple loop
+ detection based on sequence numbers.
+
+Package: des-gossip-adv-dbg
+Architecture: any
+Section: debug
+Depends: des-gossip-adv (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for des-gossip-adv
+ This package contains the debugging symbols for des-gossip-adv.
+ des-gossip-adv is an gossip-adv daemon based on the libdessert
+ routing framework.

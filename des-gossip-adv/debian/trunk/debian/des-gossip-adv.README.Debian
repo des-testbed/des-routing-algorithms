@@ -1,0 +1,13 @@
+des-gossip-adv for Debian
+--------------------------------
+
+des-gossip-adv provides an extension dissector for its extension that
+can be used with Wireshark or tshark.
+
+Call the particular program with the following parameter:
+ PROGRAM -X lua_script:/usr/share/des-gossip-adv/des-gossip-adv.lua
+
+Please note that the libdessert-dissectors Debian package is required!
+It is not a dependency of this package to prevent that the user has to install
+wireshark-common just to use des-gossip-adv.
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagerOptions>
+    470:    cli_register_command(dessert_cli, dessert_cli_show, "probability", cli_showp, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show p");
+    473:    cli_register_command(dessert_cli, dessert_cli_show, "probability2", cli_showp2, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show p2");
+    476:    cli_register_command(dessert_cli, dessert_cli_show, "k", cli_showk, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show k");
+    479:    cli_register_command(dessert_cli, dessert_cli_show, "forwarder", cli_showforwarder, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show if node forwards packets");
+    482:    cli_register_command(dessert_cli, dessert_cli_show, "n", cli_shown, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show n");
+    485:    cli_register_command(dessert_cli, dessert_cli_show, "m", cli_showm, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show m");
+    488:    cli_register_command(dessert_cli, dessert_cli_show, "timeout_ms", cli_showtimeout, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show timeout");
+    491:    cli_register_command(dessert_cli, dessert_cli_show, "helloSize", cli_showhellosize, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show timeout");
+    494:    cli_register_command(dessert_cli, dessert_cli_show, "gossip", cli_showgossip, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip mode");
+    496:    cli_register_command(dessert_cli, dessert_cli_show, "neighbors", cli_showneighbors, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show neighbors");
+    499:    cli_register_command(dessert_cli, dessert_cli_show, "logrx", cli_showlogrx, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show rx logging state");
+    501:    cli_register_command(dessert_cli, dessert_cli_show, "logtx", cli_showlogrx, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show tx logging state");
+    506:    cli_register_command(dessert_cli, dessert_cli_show, "helloInterval_ms", cli_showHelloInterval, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show HELLO and cleanup interval");
+    513:    cli_register_command(dessert_cli, dessert_cli_show, "helloTTL", cli_showHelloTTL, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show helloTTL");
+    515:    cli_register_command(dessert_cli, dessert_cli_show, "counter_hello", cli_showcounterhello, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show hello counter");
+    518:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_stats", gossip13_stats, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 data");
+    519:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_mystats", gossip13_mystats, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 data");
+    520:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_tx_history", gossip13_show_tx_history, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 tx history");
+    521:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_rx_history", gossip13_show_rx_history, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 rx history");
+    522:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_data", gossip13_show_data, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 data for a host");
+    523:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_hops_history", gossip13_show_hops_history, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show gossip13 hops history");
+    525:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_tau_ms", gossip13_show_tau, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show restart interval");
+    527:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_restarts", gossip13_show_restarts, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show number of restarts");
+    530:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_deadline_ms", gossip13_show_deadline, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show deadline");
+    533:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_update_ms", gossip13_show_update, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show update interval");
+    535:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_observation_ms", gossip13_show_observation, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show update interval");
+    537:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_emission_ms", gossip13_show_emission, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show emission interval");
+    539:    cli_register_command(dessert_cli, dessert_cli_show, "gossip13_drop_seq2_duplicates", gossip13_show_seq2, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show seq2 setting");
+    543:    cli_register_command(dessert_cli, dessert_cli_show, "tmax", cli_showtmax, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show tmax value");
+    547:    cli_register_command(dessert_cli, dessert_cli_show, "pmin", cli_showpmin, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show p_min value");
+    549:    cli_register_command(dessert_cli, dessert_cli_show, "pmax", cli_showpmax, PRIVILEGE_UNPRIVILEGED, MODE_EXEC, "show p_max value");
+
+    <!-- BEGIN ROUTING -->
+    <Spacer description="Show Commands"/>
+    <Command description="Show probability p">
+        <CommandLine value="show probability" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show probability p2">
+        <CommandLine value="show probability2" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show k value">
+        <CommandLine value="show k" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show if node forwards packets">
+        <CommandLine value="show forwarder" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show n value">
+        <CommandLine value="show n" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show m value">
+        <CommandLine value="show m" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show timeout value">
+        <CommandLine value="show timeout_ms" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show hello packet size">
+        <CommandLine value="show helloSize" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show gossip mode">
+        <CommandLine value="show gossip" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show neighbors">
+        <CommandLine value="show neighbors" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show rx logging state">
+        <CommandLine value="show logrx" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show tx logging state">
+        <CommandLine value="show logtx" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show hello interval">
+        <CommandLine value="show helloInterval_ms" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show helloTTL">
+        <CommandLine value="show helloTTL" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="show hello counter">
+        <CommandLine value="show counter_hello" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+
+    <!-- BEGIN DATA TABLES -->
+    <Spacer description="Interface Settings"/>
+    <Property description="Mesh Interfaces">
+        <GetterCommand>
+            <CommandLine value="show meshifs" mode="DEFAULT|PRIVILEGED"/>
+        </GetterCommand>
+        <SetterCommand>
+            <CommandLine value="interface mesh %if%" mode="CONFIG"/>
+            <StringOption name="if" description="Interface (e.g. wlan0)"/>
+        </SetterCommand>
+    </Property>
+    <Property description="System Interface">
+        <GetterCommand>
+            <CommandLine value="show sysif" mode="DEFAULT|PRIVILEGED"/>
+        </GetterCommand>
+        <SetterCommand>
+            <CommandLine value="interface sys %if% %ip% %mask% %mtu%" mode="CONFIG"/>
+            <StringOption name="if" description="Interface (e.g. tap0)"/>
+            <StringOption name="ip" description="IP (e.g. 192.168.5.99)"/>
+            <StringOption name="mask" description="Netmask (e.g. 255.255.255.0)"/>
+            <IntegerOption name="mtu" minValue="576" maxValue="1500" description="MTU (optional)"/>
+        </SetterCommand>
+    </Property>
+
+    <Spacer description="Logging"/>
+    <Command description="Show Logging">
+        <CommandLine value="show logging" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Property description="Log Level">
+        <GetterCommand>
+            <CommandLine value="show loglevel" mode="DEFAULT|PRIVILEGED"/>
+        </GetterCommand>
+        <SetterCommand>
+            <CommandLine value="loglevel %level%" mode="CONFIG"/>
+            <ListOption name="level" description="Log Level">
+                <Item value="debug"/>
+                <Item value="info"/>
+                <Item value="notice"/>
+                <Item value="warning"/>
+                <Item value="error"/>
+                <Item value="critical"/>
+                <Item value="emergency"/>
+            </ListOption>
+        </SetterCommand>
+    </Property>
+    <Command description="Verbose Messages">
+        <CommandLine value="set verbose %value%" mode="CONFIG"/>
+        <BooleanOption name="value" falseValue="0" trueValue="1" description="Use Verbose Messages"/>
+    </Command>
+    <Command description="Disable Ringbuffer Logging">
+        <CommandLine value="no logging ringbuffer" mode="CONFIG"/>
+    </Command>
+    <Command description="Enable Ringbuffer Logging">
+        <CommandLine value="logging ringbuffer %max_lines%" mode="CONFIG"/>
+        <IntegerOption name="max_lines" minValue="1" maxValue="64" description="Lines to log"/>
+    </Command>
+
+    <Spacer description="Informational"/>
+    <Command description="Show Dessert-Info">
+        <CommandLine value="show dessert-info" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="Show registered tasks">
+        <CommandLine value="show tasks" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="Show token bucket configuration">
+        <CommandLine value="show tb" mode="DEFAULT|PRIVILEGED"/>
+    </Command>
+    <Command description="Command History">
+        <CommandLine value="history" mode="DEFAULT|PRIVILEGED|CONFIG"/>
+    </Command>
+</ManagerOptions>

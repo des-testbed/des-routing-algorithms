@@ -1,0 +1,10 @@
+des-gossip-adv for Debian
+-------------------------
+
+* Added debconf, postinst, prerm, and portrm script
+ -- Sebastian Hofmann <shof@inf.fu-berlin.de>  So, 13 Dec 2009 11:04:34 +0200
+
+* Added default parameters in configuration file
+* Added init script and default file
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 05 Jun 2009 16:55:12 +0200

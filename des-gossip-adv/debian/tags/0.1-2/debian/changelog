@@ -1,0 +1,12 @@
+des-gossip-adv (0.1-2) unstable; urgency=low
+
+  * Added default file
+  * Added init script
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 09 Jun 2009 18:07:45 +0200
+
+des-gossip-adv (0.1-1) unstable; urgency=low
+
+  * Initial release 
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 05 Jun 2009 16:55:12 +0200

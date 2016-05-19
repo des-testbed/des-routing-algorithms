@@ -1,0 +1,204 @@
+version 1.16
+============
+22.02.2011
+
+- Optionally send gossip13 updates
+- Included tau and restarts in [tag] message
+- Ensure that the [tx], [fw], and [rx] messages contain the inner sequence number if gossip13 is used
+
+version 1.15
+============
+09.12.2011
+
+- Fixed several bugs in NHDP and added features
+
+version 1.14
+============
+???
+
+- Fixed bug in neighborhood cleanup
+- Adapted code to new libdessert API
+
+version 1.13
+============
+02.07.2011
+
+- helloInterval supports ms granularity
+
+version 1.11
+============
+16.04.2011
+
+- Added rssi support
+
+version 1.10
+============
+23.03.2011
+
+- Added android make target.
+- Added #ifdefs for android compatibility
+
+version 1.9
+============
+01.12.2010
+
+- Better/more log messages
+- Size of HELLOs can be configured
+
+version 1.8
+============
+???
+
+version 1.7
+============
+11.10.2010
+
+- Total rewrite
+- Removed or merged many redundant parts
+- Removed useL25H switch; packets are always identified based on the layer 2.5 src address and seq
+- Significantly simplified packet handling
+
+version 1.6
+============
+07.10.2010
+
+- Minor modification and code cleanup
+- Adapted the implementation to new libdessert release
+- Updated default, conf, and init files
+
+version 1.6
+============
+???
+
+- Minor modifcations to adapt the implementation to new libdessert release
+
+version 1.5
+============
+09.04.2010
+
+- added gossip11
+- fix gossip6 calculation
+
+version 1.2
+============
+29.03.2010
+
+- fix template
+
+version 1.00
+============
+27.03.2010
+
+- add libdessert-extra changes
+
+version 0.99
+============
+28.02.2010
+
+- update init.d script
+- remove trace function
+
+
+version 0.97
+============
+14.01.2010
+
+- update init.d script
+
+
+version 0.96
+============
+13.01.2010
+
+- "out of the box" working again
+- latest libdessert
+
+version 0.95
+============
+08.01.2010
+
+- Fix a sys interface bug
+
+version 0.94
+============
+06.01.2010
+
+- Update to reflect changes from latest libdessert
+- changed gossip5
+
+version 0.93
+============
+13.12.2009
+
+- Misc fixes
+
+version 0.91
+============
+09.12.2009
+
+- Misc fixes
+- Update copyright
+
+version 0.9
+===========
+02.12.2009
+
+- New cli port 4519
+
+version 0.890
+=============
+27.11.2009
+
+- Code cleanup
+- Build against final libdessert
+
+version 0.889
+=============
+23.11.2009
+
+- The "Rødgrød med fløde release"
+- Fix: packettrapped periodic
+
+version 0.8
+===========
+13.11.2009
+
+- Beta release
+
+version 0.7
+===========
+12.11.2009
+
+- Fix: the "double" messages
+
+version 0.6
+===========
+08.11.2009
+
+- new: add Gossip 7 & 8
+
+version 0.5
+===========
+21.10.09
+
+- Build against libdessert version >=0.86
+  Support for libdessert versions 0.81 dropped
+
+version 0.4
+===========
+14.10.2009
+
+- Push package version to current gossip development version
+
+version 0.1-5
+=============
+14.10.2009
+
+- New upstream release
+
+version 0.1-4
+=============
+22.09.2009
+
+- Layer 2 features
+- New options

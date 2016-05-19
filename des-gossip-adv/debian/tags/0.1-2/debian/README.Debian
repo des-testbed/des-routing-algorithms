@@ -1,0 +1,7 @@
+des-gossip-adv for Debian
+-------------------------
+
+* Added default parameters in configuration file
+* Added init script and default file
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 05 Jun 2009 16:55:12 +0200

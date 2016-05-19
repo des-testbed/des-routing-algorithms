@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchOptions>
+    <Spacer description="Logging"/>
+    <List name="loglevel" default="info" description="Log Level">
+        <Item value="debug"/>
+        <Item value="info"/>
+        <Item value="notice"/>
+        <Item value="warning"/>
+        <Item value="error"/>
+        <Item value="critical"/>
+        <Item value="emergency"/>	<!-- full name is not used at all instead the first character counts -->
+    </List>
+    <Integer name="helloSize" default="128" minValue="1" maxValue="1024" description="set HELLO size"/>
+    <Integer name="helloInterval" default="2" minValue="1" maxValue="60" description="set HELLO interval"/>
+    <Integer name="probability" default="100" minValue="0" maxValue="100" description="set gossip p value"/>
+</LaunchOptions>
+
