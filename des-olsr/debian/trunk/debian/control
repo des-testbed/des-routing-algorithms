@@ -1,0 +1,26 @@
+Source: des-olsr
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.9.1
+Homepage: http://www.des-testbed.net/
+
+Package: des-olsr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: OLSR routing daemon based on libdessert
+ Implementation of Optimized Link State Routing (OLSR) protocol based on 
+ OSLRv1 (RFC 3626) and an Internet-Draft version of OLSRv2. The des-olsr
+ daemon supports multiple link/path metrics: hop count, packet delivery ratio,
+ ETX, and a multiplicative variant of ETX.
+
+Package: des-olsr-dbg
+Architecture: any
+Section: debug
+Depends: des-olsr (= ${binary:Version}), ${misc:Depends}
+Description: OLSR routing daemon based on libdessert (debugging symbols)
+ Debugging symbols for the OLSR routing daemon based on the DES-SERT
+ routing framework. You only need this package to debug des-olsr, e.g.,
+ when a segmentation fault is encountered.
+

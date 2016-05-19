@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagerOptions>
+
+	<Spacer description="Routing Parameters"/>
+	<Command description="HELLO Interval">
+		<CommandLine value="set hellointerval %value%" mode="CONFIG"/>
+		<IntegerOption name="value" minValue="1" description="Interval in Seconds"/>
+	</Command>
+	<Command description="TC Interval">
+		<CommandLine value="set tcinterval %value%" mode="CONFIG"/>
+		<IntegerOption name="value" minValue="1" description="Interval in Seconds"/>
+	</Command>
+	<Command description="Validity Time Coefficient">
+		<CommandLine value="set validitycoeff %value%" mode="CONFIG"/>
+		<IntegerOption name="value" minValue="1" description="Validity Time Coefficient"/>
+	</Command>
+	<Command description="Broadcast Re-Send Willingness">
+		<CommandLine value="set willingness %value%" mode="CONFIG"/>
+		<IntegerOption name="value" minValue="0" maxValue="7" description="Broadcast Re-Send Willingness"/>
+	</Command>
+	<Command description="Routing Metric">
+		<CommandLine value="set metric %value%" mode="CONFIG"/>
+		<ListOption name="value" description="Routing Metric">
+			<Item value="PLR"/>
+			<Item value="HC"/>
+			<Item value="ETX"/>
+			<Item value="ETX-ADD"/>
+		</ListOption>
+	</Command>
+	<Command description="PLR/ETX Window Size">
+		<CommandLine value="set windowsize %value%" mode="CONFIG"/>
+		<IntegerOption name="value" minValue="1" description="Window Size"/>
+	</Command>
+
+
+	<Spacer description="Data Tables"/>
+	<Property description="Neighbour Table (Simple)">
+		<GetterCommand>
+			<CommandLine value="print ns_so" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+	</Property>
+	<Property description="Routing Table (Simple)">
+		<GetterCommand>
+			<CommandLine value="print rt_so" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+	</Property>
+	<Command description="Neighbour Table 1-hop">
+		<CommandLine value="print ns" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Neighbout Table 2-hop">
+		<CommandLine value="print 2hns" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Link Table">
+		<CommandLine value="print ls" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Routing Table">
+		<CommandLine value="print rt" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="TC Table">
+		<CommandLine value="print tc" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+
+
+	<Spacer description="Interface Settings"/>
+	<Property description="Mesh Interfaces">
+		<GetterCommand>
+			<CommandLine value="show meshifs" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="interface mesh %if%" mode="CONFIG" />
+			<StringOption name="if"  description="Interface (e.g. wlan0)" />
+		</SetterCommand>
+	</Property>
+	<Property description="System Interface">
+		<GetterCommand>
+			<CommandLine value="show sysif" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="interface sys %if% %ip% %mask% %mtu%" mode="CONFIG" />
+			<StringOption name="if"  description="Interface (e.g. tap0)" />
+			<StringOption name="ip"  description="IP (e.g. 192.168.5.99)" />
+			<StringOption name="mask"  description="Netmask (e.g. 255.255.255.0)" />
+			<IntegerOption name="mtu" minValue="576" maxValue="1500" description="MTU (optional)" />
+		</SetterCommand>
+	</Property>
+
+	<Spacer description="Logging"/>
+	<Command description="Show Logging">
+		<CommandLine value="show logging" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Property description="Log Level">
+		<GetterCommand>
+			<CommandLine value="show loglevel" mode="DEFAULT|PRIVILEGED"/>
+		</GetterCommand>
+		<SetterCommand>
+			<CommandLine value="loglevel %level%" mode="CONFIG" />
+			<ListOption name="level" description="Log Level">
+				<Item value="debug"/>
+				<Item value="info"/>
+				<Item value="notice"/>
+				<Item value="warning"/>
+				<Item value="error"/>
+				<Item value="critical"/>
+				<Item value="mergency"/>	<!-- full name is not used at all instead the first character counts -->
+			</ListOption>
+		</SetterCommand>
+	</Property>
+	<Command description="Disable Ringbuffer Logging">
+		<CommandLine value="no logging ringbuffer" mode="CONFIG"/>
+	</Command>
+	<Command description="Enable Ringbuffer Logging">
+		<CommandLine value="logging ringbuffer %max_lines%" mode="CONFIG"/>
+		<IntegerOption name="max_lines" minValue="1" maxValue="64" description="Lines to log"/>
+	</Command>
+
+
+	<Spacer description="Informational"/>
+	<Command description="Show Dessert-Info">
+		<CommandLine value="show dessert-info" mode="DEFAULT|PRIVILEGED"/>
+	</Command>
+	<Command description="Command History">
+		<CommandLine value="history" mode="DEFAULT|PRIVILEGED|CONFIG"/>
+	</Command>
+
+</ManagerOptions>

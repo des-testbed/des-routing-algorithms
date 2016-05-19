@@ -1,0 +1,197 @@
+Source: des-dsr
+Section: net
+Priority: extra
+Maintainer: David Gutzmann <gutzmann@inf.fu-berlin.de>
+Uploaders: Bastian Blywis <blywis@inf.fu-berlin.de>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.8.4
+Homepage: http://wwww.des-testbed.net
+
+Package: des-dsr-hc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a DSR daemon with hop count metric based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-hc daemon uses a RFC conform RREQ forwarding, the hop count
+ metric for path selection and a route cache.
+
+Package: des-dsr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a DSR daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr daemon uses a RFC conform RREQ forwarding, the ETX
+ metric for path selection and a route cache.
+
+Package: des-dsr-linkcache
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a DSR daemon based on libdessert utilizing a linkcache
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-linkcache daemon uses a RFC conform RREQ forwarding, the hop count
+ metric for path selection and a link cache.
+
+Package: des-dsr-etx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a DSR daemon based on libdessert utilizing the ETX metric
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-etx daemon uses the ETX RREQ forwarding, the ETX
+ metric for path selection and a route cache.
+
+Package: des-dsr-etx-backup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (ETX + backup) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-backup daemon uses the ETX RREQ forwarding, the ETX
+ metric for path selection, a route cache. Two paths are selected:
+ primary path and a secondary path for backup.
+
+Package: des-dsr-etx-lb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (ETX + round-robin) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-lb daemon uses the ETX RREQ forwarding, the ETX
+ metric for path selection, a route cache. Two paths are selected and
+ used in a round robin way for load balancing.
+
+Package: des-dsr-linkcache-etx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a DSR daemon based on libdessert utilizing a linkcache and the ETX metric
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-linkcache-etx daemon uses the ETX RREQ forwarding, the ETX
+ metric for path selection and a link cache.
+
+Package: des-dsr-mdsr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (MDSR) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-mdsr daemon uses the RFC conform RREQ forwarding and a route
+ cache. The first received RREQ is replied and all further RREQs over link
+ disjoint paths. Thus multiple path are created. The first is used
+ as primary path and all others as backup paths.
+
+Package: des-dsr-smr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (SMR) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-smr daemon uses a SMR specific RREQ forwarding and a route cache.
+ The first received RREQ is replied and the RREQ received over the maximal
+ disjunct path. Both paths are used at the same time for load balancing.
+
+Package: des-dsr-backuppath1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (BackupPath - Variant 1) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-backuppath1 daemon is based on SMR and uses a route cache.
+ Two paths are selected: shortest path (primary) and lowest delay path
+ (backup).
+
+Package: des-dsr-backuppath2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a multipath DSR (BackupPath - Variant 2) daemon based on libdessert
+ This package provides a Dynamic Source Routing (DSR) routing daemon based on
+ the Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+ The des-dsr-backuppath2 daemon is based on SMR and uses a route cache.
+ Two paths are selected: lowest delay path (primary) and maximal disjoint
+ path (backup).
+
+Package: des-dsr-dbg
+Architecture: any
+Section: debug
+Depends: des-dsr-hc (= ${binary:Version}) | des-dsr (= ${binary:Version}) | des-dsr-etx (= ${binary:Version}) | des-dsr-linkcache (= ${binary:Version}) | des-dsr-linkcache-etx (= ${binary:Version}) | des-dsr-mdsr (= ${binary:Version}) | des-dsr-smr (= ${binary:Version}) | des-dsr-backuppath1 (= ${binary:Version}) | des-dsr-backuppath2 (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for des-dsr
+ This package contains the gdb debugging symbols for the des-dsr packages.
+ .
+ des-dsr is a Dynamic Source Routing (DSR) routing daemon based on the
+ Distributed Embedded Systems - Simple and Extensible Routing-Framework
+ for Testbeds (DES-SERT) that is provided as package libdessert.
+ .
+ DES-SERT provides underlay routing that is transparent for the
+ host's protocol stack. Daemons in user space create a TUN or TAP interface
+ that can be used to access the underlay network.
+ .
+

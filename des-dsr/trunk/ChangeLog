@@ -1,0 +1,18 @@
+20110322 - version 0.143
+  * Added android #ifdefs
+  * Added android directory "android"
+
+???????? - version 0.142
+  * Fixed bug in init scripts (newline was missing)
+  * Removed old flag
+
+20100716 - version 0.141
+  * Minor fixes
+
+20100716 - version 0.139
+  * Added log file to configuration
+  * Enables default log file compression
+  * Adde hop count variant
+
+20100108 - version 0.0
+  * Initial release

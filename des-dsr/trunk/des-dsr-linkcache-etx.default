@@ -1,0 +1,9 @@
+# Config file for package des-dsr-linkcache-etx
+PIDFILE="/var/run/des-dsr-linkcache-etx.pid"
+DAEMON_OPTS="/etc/des-dsr-linkcache-etx.conf"
+TAP_NAME=tap0
+TAP_IP=10.0.0.1
+TAP_NETMASK=255.255.255.0
+CLI_PORT=4519
+IFACE=eth0
+LOGFILE="/var/log/des-dsr-linkcache-etx.log"

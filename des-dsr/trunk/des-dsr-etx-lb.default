@@ -1,0 +1,9 @@
+# Config file for package des-dsr-etx-lb
+PIDFILE="/var/run/des-dsr-etx-lb.pid"
+DAEMON_OPTS="/etc/des-dsr-etx-lb.conf"
+TAP_NAME=tap0
+TAP_IP=10.0.0.1
+TAP_NETMASK=255.255.255.0
+CLI_PORT=4519
+IFACE=eth0
+LOGFILE="/var/log/des-dsr-etx-lb.log"

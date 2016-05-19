@@ -1,0 +1,9 @@
+# Config file for package des-olsr
+PIDFILE="/var/run/des-olsr.pid"
+DAEMON_OPTS="/etc/des-olsr.conf"
+TAP_NAME=tap0
+TAP_IP=$(calc_ip 4)
+TAP_NETMASK=255.255.0.0
+CLI_PORT=4519
+IFACE=wlan0
+LOGFILE="/var/log/des-olsr.log"

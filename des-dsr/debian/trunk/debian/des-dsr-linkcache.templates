@@ -1,0 +1,108 @@
+Template: des-dsr-linkcache/title
+Type: title
+Description: des-dsr-linkcache Configuration
+
+Template: des-dsr-linkcache/tap-name
+Type: string
+Default: tap0
+_Description: Name of TAP interface:
+ Please specify the name of the TAP interface that is used by the
+ routing daemon, e.g. "tap0".
+
+Template: des-dsr-linkcache/tap-name-default
+Type: note
+_Description: Default name assigned for TAP interface
+ The name "tap0" will be assigned to the TAP interface used by the
+ routing daemon. You can change the name by editing the configuration
+ file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/tap-ip
+Type: string
+Default: 10.0.0.1
+_Description: IPv4 address of TAP interface:
+ Please specify an IPv4 address to assign to the TAP interface that is
+ used by the routing daemon. If you leave this field empty, a default
+ address will be used (10.0.0.1).
+
+Template: des-dsr-linkcache/tap-ip-invalid
+Type: error
+_Description: IPv4 address is invalid
+ The IPv4 address you entered is invalid. You can enter the IPv4 address
+ again until it is valid or you leave the field empty.
+
+Template: des-dsr-linkcache/tap-ip-default
+Type: note
+_Description: Default IPv4 address assigned for TAP interface
+ The IPv4 address "10.0.0.1" will be assigned to the TAP interface used
+ by the routing daemon. You can change the address by editing the
+ configuration file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/tap-netmask
+Type: string
+Default: 255.255.255.0
+_Description: Netmask of the TAP interface:
+ Please specify a netmask to assign to the TAP interface that is
+ used by the routing daemon. If you leave this field empty, a default
+ address will be used (255.255.255.0).
+
+Template: des-dsr-linkcache/tap-netmask-default
+Type: note
+_Description: Default netmask assigned for TAP interface
+ The netmask 255.255.255.0 will be assigned to the TAP interface used by
+ the routing daemon. You can change the netmask by editing the
+ configuration file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/cli-port
+Type: string
+Default: 4519
+_Description: Port of the CLI:
+ The routing daemon provides a command line interface (CLI) similiar to
+ Cisco IOS. You have to provide a TCP port to make the CLI available.
+
+Template: des-dsr-linkcache/cli-port-default
+Type: note
+_Description: Default port number for the CLI
+ The TCP port number "4519" will be used for the command line interface.
+ You can change the port by editing the configuration file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/iface
+Type: string
+Default: eth0
+_Description: Interfaces to use for routing:
+ Please specify the interfaces you want to use with the routing daemon.
+ You can specify multiple interfaces as comma-separated list, e.g.
+ "eth0, wlan0, pan0".
+ If you leave this field empty, a default interface will be used.
+
+Template: des-dsr-linkcache/iface-default
+Type: note
+_Description: Default interface used for routing
+ The interface "eth0" will be used by the routing daemon. You can change
+ the name by editing the configuration file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/pid-file
+Type: string
+Default: /var/run/des-dsr-linkcache.pid
+_Description: PID file:
+ The process id is written to this file once the daemon has started.
+ If you leave this field empty, a default file name will be used.
+
+Template: des-dsr-linkcache/pid-file-default
+Type: note
+_Description: Default PID file
+ The process id will be written to "/var/run/des-dsr-linkcache.pid".
+ You can change the file name by editing the configuration file /etc/default/des-dsr-linkcache.
+
+Template: des-dsr-linkcache/log-file
+Type: string
+Default: /var/log/des-dsr-linkcache.log
+_Description: Log file:
+ The daemon log is written to this file.
+ If you leave this field empty, a default file name will be used.
+
+Template: des-dsr-linkcache/log-file-default
+Type: note
+_Description: Default log file
+ The log will be written to "/var/log/des-dsr-linkcache.log".
+ You can change the file name by editing the configuration file /etc/default/des-dsr-linkcache.
+

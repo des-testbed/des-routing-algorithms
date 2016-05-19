@@ -1,0 +1,39 @@
+DAEMONNAME = des-dsr-etx
+DESTDIR ?= /usr/sbin
+PREFIX ?=
+
+DIR_BIN = $(PREFIX)$(DESTDIR)
+DIR_ETC = $(PREFIX)/etc
+DIR_DEFAULT = $(DIR_ETC)/default
+DIR_INIT = $(DIR_ETC)/init.d
+MODULES = dsr blacklist linkcache rreqtable routecache maintenance_buffer alloc_cache helper etx conf sendbuffer statistics
+
+UNAME = $(shell uname | tr 'a-z' 'A-Z')
+
+FILE_DEFAULT = ./$(DAEMONNAME).default
+FILE_ETC = ./$(DAEMONNAME).conf
+FILE_INIT = ./$(DAEMONNAME).init
+
+LIBS = dessert dessert-extra
+CFLAGS +=  -Wall -DTARGET_$(UNAME) -D_GNU_SOURCE -DDAEMON=2 -DHASH_FUNCTION=HASH_FNV
+LDFLAGS += $(addprefix -l,$(LIBS))
+
+all: dsr
+
+clean:
+	rm -f *.o  *.tar.gz ||  true
+	rm -f $(DAEMONNAME) || true
+	rm -rf $(DAEMONNAME).dSYM || true
+
+install:
+	mkdir -p $(DIR_BIN)
+	install -m 744 $(DAEMONNAME) $(DIR_BIN)
+	mkdir -p $(DIR_ETC)
+	install -m 644 $(FILE_ETC) $(DIR_ETC)
+	mkdir -p $(DIR_DEFAULT)
+	install -m 644 $(FILE_DEFAULT) $(DIR_DEFAULT)/$(DAEMONNAME)
+	mkdir -p $(DIR_INIT)
+	install -m 755 $(FILE_INIT) $(DIR_INIT)/$(DAEMONNAME)
+
+dsr: $(addsuffix .o,$(MODULES)) 
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $(DAEMONNAME) $(addsuffix .o,$(MODULES))

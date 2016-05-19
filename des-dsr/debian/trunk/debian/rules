@@ -1,0 +1,107 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+VARIANTS+=des-dsr
+VARIANTS+=des-dsr-hc
+VARIANTS+=des-dsr-etx
+VARIANTS+=des-dsr-linkcache
+VARIANTS+=des-dsr-linkcache-etx
+VARIANTS+=des-dsr-mdsr
+VARIANTS+=des-dsr-smr
+VARIANTS+=des-dsr-backuppath1
+VARIANTS+=des-dsr-backuppath2
+VARIANTS+=des-dsr-etx-backup
+VARIANTS+=des-dsr-etx-lb
+
+prepare-stamp-%: export DH_OPTIONS=-p$*
+prepare-stamp-%:
+	dh_testdir
+	@echo "*** DEBIAN *** PREPARING VARIANT $*"
+	mkdir -p $*
+	cd $*; ln -s ../*.[ch] ../$*.conf ../$*.init ../$*.default ../major_version ../build .
+	cp Makefile.$* $*
+	touch $@
+
+build: build-stamp
+
+build-stamp: $(foreach v,$(VARIANTS),build-stamp-$(v))
+	dh_testdir
+	touch $@
+
+build-stamp-%: export DH_OPTIONS=-p$*
+build-stamp-%: prepare-stamp-%
+	dh_testdir
+	dh_clean -p$* 
+	@echo "*** DEBIAN *** BUILDING VARIANT $*"
+	$(MAKE) -C $* -f Makefile.$*
+	docbook-to-man debian/$*.sgml > debian/$*.1
+	touch $@
+	
+clean: $(foreach v,$(VARIANTS),clean-$(v))
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp* install-stamp* prepare-stamp*
+	dh_clean
+	debconf-updatepo
+	
+clean-%: export DH_OPTIONS=-p$*
+clean-%:
+	dh_testdir
+	dh_testroot
+	rm -f debian/$*.1
+	rm -rf $*
+	
+install: $(foreach v,$(VARIANTS),install-stamp-$(v))
+
+
+install-stamp-%: export DH_OPTIONS=-p$*
+install-stamp-%: build-stamp-%
+	dh_testdir
+	dh_testroot
+	dh_prep  
+	dh_installdirs
+	@echo "*** DEBIAN *** INSTALLING VARIANT $*"
+	@echo "echo $(CURDIR)"	
+	$(MAKE) -C $* -f Makefile.$* PREFIX=$(CURDIR)/debian/$* install
+
+# Build architecture-independent files here.
+binary-indep: 
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+
+binary-arch: export DH_OPTIONS=-pdes-dsr-dbg
+binary-arch: $(foreach v,$(VARIANTS),binary-arch-$(v))
+	dh_testdir
+	dh_testroot
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+
+binary-arch-%: export DH_OPTIONS=-p$*
+binary-arch-%: install-stamp-%
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -pdes-dsr-dbg 
+	dh_installdocs -pdes-dsr-dbg 
+	dh_installexamples
+	dh_installdebconf
+	dh_installman
+	dh_link
+	dh_strip --dbg-package=des-dsr-dbg
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure

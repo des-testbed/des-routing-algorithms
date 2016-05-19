@@ -1,0 +1,184 @@
+<!doctype refentry PUBLIC "-//OASIS//DTD DocBook V4.1//EN" [
+
+<!-- Process this file with docbook-to-man to generate an nroff manual
+     page: `docbook-to-man manpage.sgml > manpage.1'.  You may view
+     the manual page with: `docbook-to-man manpage.sgml | nroff -man |
+     less'.  A typical entry in a Makefile or Makefile.am is:
+
+manpage.1: manpage.sgml
+	docbook-to-man $< > $@
+
+
+	The docbook-to-man binary is found in the docbook-to-man package.
+	Please remember that if you create the nroff version in one of the
+	debian/rules file targets (such as build), you will need to include
+	docbook-to-man in your Build-Depends control field.
+
+  -->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "<firstname>David</firstname>">
+  <!ENTITY dhsurname   "<surname>Gutzmann</surname>">
+  <!-- Please adjust the date whenever revising the manpage. -->
+  <!ENTITY dhdate      "<date>January  8, 2010</date>">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1). -->
+  <!ENTITY dhsection   "<manvolnum>1</manvolnum>">
+  <!ENTITY dhemail     "<email>gutzmann@inf.fu-berlin.de</email>">
+  <!ENTITY dhusername  "David Gutzmann">
+  <!ENTITY dhucpackage "<refentrytitle>des-dsr-linkcache</refentrytitle>">
+  <!ENTITY dhpackage   "des-dsr-linkcache">
+
+  <!ENTITY debian      "<productname>Debian</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+  <!ENTITY gpl         "&gnu; <acronym>GPL</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <author>
+      &dhfirstname;
+      &dhsurname;
+    </author>
+    <copyright>
+      <year>2010</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+    
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+    
+    <refpurpose>Dynamic Source Routing (DSR) daemon based on libdessert</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+
+      <arg><option><replaceable>config_file</replaceable></option></arg>
+
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para>This manual page documents briefly the
+      <command>&dhpackage;</command> package.</para>
+
+    <para>This manual page was written for the &debian; distribution
+      because the original program does not have a manual page.</para>
+
+    <para><command>&dhpackage;</command> is a Dynamic Source Routing (DSR) 
+    routing daemon based on the Distributed Embedded Systems - Simple and 
+    Extensible Routing-Framework for Testbeds (DES-SERT) that is provided 
+    as package libdessert.</para>
+    
+    <para>DES-SERT provides underlay routing that is transparent for the
+    host's protocol stack. Daemons in user space create a TUN or TAP interface
+    that can be used to access the underlay network.</para>
+
+  </refsect1>
+  <refsect1>
+    <title>OPTIONS</title>
+    
+    <para>Daemons based on DES-SERT place their general configuration in 
+    /etc/default/<replaceable>PACKAGE_NAME</replaceable> which includes the 
+    name of the TUN/TAP interface, TCP port for the telnet command line interface (CLI),
+    and a list of interfaces used to send or receive packets. Use the "default"
+    file to configure these parameters or use <application>dpkg-reconfigure</application>
+    <replaceable>PACKAGE_NAME</replaceable> and a 
+    <application>debconf</application> script will ask you for these parameters.</para>
+    
+    <para>The /etc/<replaceable>PACKAGE_NAME</replaceable>.conf file is used
+    to provide settings that are specific to the routing protocol. This 
+    configuration file is written in the libcli syntax. Please see the 
+    documentation in the <application>libcli-dev</application> package.</para>
+    <para> Please note that you should NOT configure the TUN/TAP, network interfaces, or
+    CLI port in the /etc/<replaceable>PACKAGE_NAME</replaceable>.conf file!!!</para>
+    
+    <variablelist>
+     <varlistentry>
+        <term><option>logging ringbuffer <replaceable>LENGTH</replaceable></option>
+        </term>
+        <listitem>
+          <para>Provide a ringbuffer of log messages via the CLI with the last
+          <replaceable>LENGTH</replaceable> messages.</para>
+        </listitem>
+      </varlistentry>
+     <varlistentry>
+        <term><option>logging file <replaceable>FILE</replaceable></option>
+        </term>
+        <listitem>
+          <para>Use file <replaceable>FILE</replaceable> for logging.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>interface mesh <replaceable>IFNAME</replaceable></option>
+        </term>
+        <listitem>
+          <para>Use interface <replaceable>IFNAME</replaceable> for routing. Please not the remarks above!</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>interface sys <replaceable>TAP_NAME</replaceable> <replaceable>TAP_IP</replaceable> <replaceable>TAP_SUBNET</replaceable></option>
+        </term>
+        <listitem>
+          <para>Create TAP interface with given name, IP address, and subnet mask. Please not the remarks above!</para>
+        </listitem>
+      </varlistentry>
+            <varlistentry>
+        <term><option>set port <replaceable>NUMBER</replaceable></option>
+        </term>
+        <listitem>
+          <para>Configure the telnet interface to run on TCP port <replaceable>NUMBER</replaceable>. Please not the remarks above!</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  <refsect1>
+    <title>SEE ALSO</title>
+
+    <para>libdessert (3)</para>
+
+  </refsect1>
+  <refsect1>
+    <title>AUTHOR</title>
+
+    <para>This manual page was written by &dhusername; &dhemail; for
+      the &debian; system (and may be used by others).  Permission is
+      granted to copy, distribute and/or modify this document under
+      the terms of the &gnu; General Public License, Version 2 any
+      later version published by the Free Software Foundation.
+    </para>
+    <para>
+      On Debian systems, the complete text of the GNU General Public
+      License can be found in /usr/share/common-licenses/GPL.
+    </para>
+
+  </refsect1>
+</refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

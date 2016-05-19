@@ -1,0 +1,814 @@
+des-dsr (0.141-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 16 Jul 2010 15:21:04 +0200
+
+des-dsr (0.139-1) stable; urgency=low
+
+  * New upstream release
+  * Added log file configuration to debconf
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 16 Jul 2010 14:30:46 +0200
+
+des-dsr (0.138-1) stable; urgency=low
+
+  * New upstream release
+  * Includes hop count variant
+  * Removed sed as dependency
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fri, 16 Jul 2010 10:44:14 +0200
+
+des-dsr (0.137-1) stable; urgency=low
+
+  * New upstream release 
+    212 / 1034 bytes etx probes
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 07 Jun 2010 18:44:22 +0200
+
+des-dsr (0.136-1) stable; urgency=low
+
+  * New upstream release 0.136 final release ;-)
+    most of logging turned off, timings adjusted
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 29 May 2010 17:45:07 +0200
+
+des-dsr (0.135-1) stable; urgency=low
+
+  * New upstream release 0.135 ALL ETX release, 
+    no retransmissions, exponential rd backoff
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 29 May 2010 13:29:05 +0200
+
+des-dsr (0.134-1) stable; urgency=low
+
+  * New upstream release 0.134 ALL ETX release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 29 May 2010 00:29:25 +0200
+
+des-dsr (0.133-1) stable; urgency=low
+
+  * New upstream release 0.133 ALL ETX release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 29 May 2010 00:13:46 +0200
+
+des-dsr (0.132-1) stable; urgency=low
+
+  * New upstream release 0.132
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 28 May 2010 22:17:06 +0200
+
+des-dsr (0.131-1) stable; urgency=low
+
+  * New upstream release 0.131
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 28 May 2010 21:40:10 +0200
+
+des-dsr (0.130-1) stable; urgency=low
+
+  * New upstream release  0.130
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 28 May 2010 20:49:58 +0200
+
+des-dsr (0.129-1) stable; urgency=low
+
+  * New upstream release 0.129
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 28 May 2010 20:46:10 +0200
+
+des-dsr (0.128-1) stable; urgency=low
+
+  * New upstream release 0.128
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 28 May 2010 19:10:16 +0200
+
+des-dsr (0.127-1) stable; urgency=low
+
+  * New upstream release 0.127
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 27 May 2010 20:13:56 +0200
+
+des-dsr (0.125-1) stable; urgency=low
+
+  * New upstream release 0.125
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 27 May 2010 20:00:23 +0200
+
+des-dsr (0.124-1) stable; urgency=low
+
+  * New upstream release 0.124
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 27 May 2010 17:47:47 +0200
+
+des-dsr (0.123-1) stable; urgency=low
+
+  * New upstream release 0.123
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 25 May 2010 21:38:44 +0200
+
+des-dsr (0.122-1) stable; urgency=low
+
+  * New upstream release 0.122
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 25 May 2010 11:04:31 +0200
+
+des-dsr (0.121-1) stable; urgency=low
+
+  * New upstream release 0.121 release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 18 May 2010 18:29:26 +0200
+
+des-dsr (0.120-1) stable; urgency=low
+
+  * New upstream release 0.120 release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 16 May 2010 17:46:02 +0200
+
+des-dsr (0.119-1) stable; urgency=low
+
+  * New upstream release 0.119 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 15 May 2010 20:15:10 +0200
+
+des-dsr (0.118-1) stable; urgency=low
+
+  * New upstream release 0.118 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 01 Apr 2010 19:17:03 +0200
+
+des-dsr (0.117-1) stable; urgency=low
+
+  * New upstream release 0.117 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 25 Mar 2010 18:50:49 +0100
+
+des-dsr (0.116-1) stable; urgency=low
+
+  * New upstream release 0.116 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 25 Mar 2010 16:45:50 +0100
+
+des-dsr (0.115-1) stable; urgency=low
+
+  * New upstream release 0.115 dubug releas
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Wed, 24 Mar 2010 19:25:05 +0100
+
+des-dsr (0.114-1) stable; urgency=low
+
+  * New upstream release 0.114 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 22:24:50 +0100
+
+des-dsr (0.113-1) stable; urgency=low
+
+  * New upstream release 0.113 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 22:05:01 +0100
+
+des-dsr (0.112-1) stable; urgency=low
+
+  * New upstream release 0.112 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 21:52:05 +0100
+
+des-dsr (0.111-1) stable; urgency=low
+
+  * New upstream release 0.111 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 20:44:43 +0100
+
+des-dsr (0.110-1) stable; urgency=low
+
+  * New upstream release 0.110 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 20:07:38 +0100
+
+des-dsr (0.109-1) stable; urgency=low
+
+  * New upstream release 0.109 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 18:48:51 +0100
+
+des-dsr (0.108-1) stable; urgency=low
+
+  * New upstream release 0.108 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 18:35:22 +0100
+
+des-dsr (0.107-1) stable; urgency=low
+
+  * New upstream release 0.107 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Mar 2010 16:38:01 +0100
+
+des-dsr (0.106-1) stable; urgency=low
+
+  * New upstream release 0.106 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Wed, 10 Mar 2010 19:49:03 +0100
+
+des-dsr (0.105-1) stable; urgency=low
+
+  * New upstream release 0.105 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Wed, 10 Mar 2010 19:03:20 +0100
+
+des-dsr (0.104-1) stable; urgency=low
+
+  * New upstream release 0.104 temoporarily changed etx+unicast-etx probe size
+    to 526 bytes (== two full size dessert extensions + dessert header)
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 09 Mar 2010 18:47:50 +0100
+
+des-dsr (0.103-1) stable; urgency=low
+
+  * New upstream release 0.103 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 07 Mar 2010 23:25:55 +0100
+
+des-dsr (0.102-1) stable; urgency=low
+
+  * New upstream release 0.102 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 07 Mar 2010 21:59:59 +0100
+
+des-dsr (0.101-1) stable; urgency=low
+
+  * New upstream release 0.101 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 07 Mar 2010 21:25:13 +0100
+
+des-dsr (0.100-1) stable; urgency=low
+
+  * New upstream release 0.100 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 07 Mar 2010 16:32:24 +0100
+
+des-dsr (0.98-1) stable; urgency=low
+
+  * New upstream release 0.98 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 18:27:44 +0100
+
+des-dsr (0.97-1) stable; urgency=low
+
+  * New upstream release 0.97 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 16:37:33 +0100
+
+des-dsr (0.96-1) stable; urgency=low
+
+  * New upstream release 0.96 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 15:48:31 +0100
+
+des-dsr (0.94-1) stable; urgency=low
+
+  * New upstream release 0.94 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 15:41:52 +0100
+
+des-dsr (0.92-1) stable; urgency=low
+
+  * New upstream release 0.92 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 15:01:22 +0100
+
+des-dsr (0.91-1) stable; urgency=low
+
+  * New upstream release 0.91 debug release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 14:47:29 +0100
+
+des-dsr (0.90-1) stable; urgency=low
+
+  * New upstream release 0.90
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 14:14:08 +0100
+
+des-dsr (0.89-1) stable; urgency=low
+
+  * New upstream release 0.89
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 06 Mar 2010 13:58:04 +0100
+
+des-dsr (0.87-2) stable; urgency=low
+
+  * Fix.
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 01 Mar 2010 10:21:40 +0100
+
+des-dsr (0.87-1) stable; urgency=low
+
+  * New upstream release 0.87
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 20:10:16 +0100
+
+des-dsr (0.86-1) stable; urgency=low
+
+  * New upstream release 0.86
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 20:02:59 +0100
+
+des-dsr (0.85-1) stable; urgency=low
+
+  * New upstream release 0.85
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 20:00:05 +0100
+
+des-dsr (0.84-1) stable; urgency=low
+
+  * New upstream release 0.84
+    des-dsr-etx-backup package added.
+    des-dsr-etx-lb package added
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 19:56:45 +0100
+
+des-dsr (0.83-1) stable; urgency=low
+
+  * New upstream release 0.83
+    des-dsr-backuppath1 package added.
+    des-dsr-backuppath2 package added.
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 19:23:37 +0100
+
+des-dsr (0.82-1) stable; urgency=low
+
+  * New upstream release 0.82
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 19:10:53 +0100
+
+des-dsr (0.81-1) stable; urgency=low
+
+  * New upstream release 0.81
+    des-dsr-smr package added.
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 19:07:30 +0100
+
+des-dsr (0.80-1) stable; urgency=low
+
+  * New upstream release 0.80
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 07:06:25 +0100
+
+des-dsr (0.79-1) stable; urgency=low
+
+  * New upstream release 0.79
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 06:51:08 +0100
+
+des-dsr (0.78-1) stable; urgency=low
+
+  * New upstream release 0.78
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 06:16:42 +0100
+
+des-dsr (0.77-1) stable; urgency=low
+
+  * New upstream release 0.77
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 06:13:12 +0100
+
+des-dsr (0.76-1) stable; urgency=low
+
+  * New upstream release 0.76
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 05:43:34 +0100
+
+des-dsr (0.75-1) stable; urgency=low
+
+  * New upstream release 0.75
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 04:52:30 +0100
+
+des-dsr (0.74-1) stable; urgency=low
+
+  * New upstream release 0.74
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 04:35:42 +0100
+
+des-dsr (0.73-1) stable; urgency=low
+
+  * New upstream release 0.73
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 28 Feb 2010 02:29:40 +0100
+
+des-dsr (0.72-1) stable; urgency=low
+
+  * New upstream release 0.72
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 27 Feb 2010 23:51:51 +0100
+
+des-dsr (0.71-1) stable; urgency=low
+
+  * New upstream release 0.71
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 27 Feb 2010 23:48:24 +0100
+
+des-dsr (0.70-1) stable; urgency=low
+
+  * New upstream release 0.70
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 27 Feb 2010 23:44:44 +0100
+
+des-dsr (0.69-1) stable; urgency=low
+
+  * New upstream release
+    Added debian package for MDSR.
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 25 Feb 2010 18:20:40 +0100
+
+des-dsr (0.68-1) stable; urgency=low
+
+  * New upstream release
+    Changed dependency from libdessert0.87 to libdessert1
+    Upgraded to des-example-0.4
+  * Fixed some debconf issues.
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 25 Feb 2010 18:01:09 +0100
+
+des-dsr (0.67-1) stable; urgency=low
+
+  * New upstream release 0.67
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 23:40:25 +0100
+
+des-dsr (0.66-1) stable; urgency=low
+
+  * New upstream release 0.66
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 23:31:33 +0100
+
+des-dsr (0.65-1) stable; urgency=low
+
+  * New upstream release 0.65
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 23:21:27 +0100
+
+des-dsr (0.64-1) stable; urgency=low
+
+  * New upstream release 0.64
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 22:59:17 +0100
+
+des-dsr (0.63-1) stable; urgency=low
+
+  * New upstream release 0.63
+    Upstream fixed some Makefile.* issues.
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 19:35:44 +0100
+
+des-dsr (0.62-1) stable; urgency=low
+
+  * New upstream release 0.62
+    Following binary packages are now provided:
+        - des-dsr               ( basic DSR (hopcount metric)          )
+        - des-dsr-etx           ( basic DSR (ETX metric)               )
+        - des-dsr-linkcache     ( DSR with linkcache (hopcount metric) )
+        - des-dsr-linkcache-etx ( DSR with linkcache (ETX metric)      )
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Tue, 16 Feb 2010 19:26:06 +0100
+
+des-dsr (0.61-1) stable; urgency=low
+
+  * New upstream release 0.61
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 14 Feb 2010 15:45:21 +0100
+
+des-dsr (0.60-1) stable; urgency=low
+
+  * New upstream release 0.60
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 21:10:12 +0100
+
+des-dsr (0.59-1) stable; urgency=low
+
+  * New upstream release 0.59
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 20:43:08 +0100
+
+des-dsr (0.58-1) stable; urgency=low
+
+  * New upstream release 0.58
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 20:07:02 +0100
+
+des-dsr (0.57-1) stable; urgency=low
+
+  * New upstream release 0.57
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 18:38:08 +0100
+
+des-dsr (0.56-1) stable; urgency=low
+
+  * New upstream release 0.56
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 17:14:33 +0100
+
+des-dsr (0.55-1) stable; urgency=low
+
+  * New upstream release 0.55
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 16:56:19 +0100
+
+des-dsr (0.54-1) stable; urgency=low
+
+  * New upstream release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 16:24:00 +0100
+
+des-dsr (0.53-1) stable; urgency=low
+
+  * New upstream release 0.53
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 13 Feb 2010 15:02:12 +0100
+
+des-dsr (0.52-1) stable; urgency=low
+
+  * New upstream release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Feb 2010 21:43:23 +0100
+
+des-dsr (0.51-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Feb 2010 20:11:06 +0100
+
+des-dsr (0.50-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 12 Feb 2010 19:21:26 +0100
+
+des-dsr (0.48-1) stable; urgency=low
+
+  * New upstream release 0.48
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 05 Feb 2010 14:22:49 +0100
+
+des-dsr (0.46-2) stable; urgency=low
+
+  * Building against libdessert0.87.2 
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 30 Jan 2010 16:29:02 +0100
+
+des-dsr (0.46-1) stable; urgency=low
+
+  * New upstream release 0.46
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 18 Jan 2010 18:55:46 +0100
+
+des-dsr (0.45-1) stable; urgency=low
+
+  * New upstream release 0.45
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 18:06:54 +0100
+
+des-dsr (0.44-1) stable; urgency=low
+
+  * New upstream release 0.44
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 17:26:14 +0100
+
+des-dsr (0.43-1) stable; urgency=low
+
+  * New upstream release 0.43
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 17:08:12 +0100
+
+des-dsr (0.42-1) stable; urgency=low
+
+  * New upstream release 0.42
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 16:49:51 +0100
+
+des-dsr (0.41-1) stable; urgency=low
+
+  * New upstream release 0.41
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 16:43:11 +0100
+
+des-dsr (0.40-1) stable; urgency=low
+
+  * New upstream release 0.40
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 17 Jan 2010 15:37:32 +0100
+
+des-dsr (0.39-1) stable; urgency=low
+
+  * New upstream release 0.39
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 22:51:51 +0100
+
+des-dsr (0.38-1) stable; urgency=low
+
+  * New upstream release 0.38
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 21:57:33 +0100
+
+des-dsr (0.37-1) stable; urgency=low
+
+  * New upstream release 0.37
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 21:47:50 +0100
+
+des-dsr (0.36-1) stable; urgency=low
+
+  * New upstream release 0.36
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 19:42:03 +0100
+
+des-dsr (0.35-1) stable; urgency=low
+
+  * New upstream release 0.35
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 16:15:24 +0100
+
+des-dsr (0.34-1) stable; urgency=low
+
+  * New upstream release 0.34
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 15:31:16 +0100
+
+des-dsr (0.33-1) stable; urgency=low
+
+  * New upstream release 0.33
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 16 Jan 2010 13:43:31 +0100
+
+des-dsr (0.32-1) stable; urgency=low
+
+  * New upstream release
+  * Incorporated changes to des-example 
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Thu, 14 Jan 2010 18:04:36 +0100
+
+des-dsr (0.31-1) stable; urgency=low
+
+  * New upstream release 0.31
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Wed, 13 Jan 2010 20:08:28 +0100
+
+des-dsr (0.30-2) stable; urgency=low
+
+  * Build against new libdessert0.87 
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Wed, 13 Jan 2010 19:10:47 +0100
+
+des-dsr (0.30-1) stable; urgency=low
+
+  * New upstream release 0.30
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 18:54:11 +0100
+
+des-dsr (0.25-1) stable; urgency=low
+
+  * New upstream release 0.25
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 06:44:43 +0100
+
+des-dsr (0.24-1) stable; urgency=low
+
+  * New upstream release 0.24
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 06:31:27 +0100
+
+des-dsr (0.23-1) stable; urgency=low
+
+  * New upstream release 0.23
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 04:35:32 +0100
+
+des-dsr (0.22-1) stable; urgency=low
+
+  * New upstream release 0.22
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 03:24:11 +0100
+
+des-dsr (0.21-1) stable; urgency=low
+
+  * New upstream release 0.21
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 03:10:31 +0100
+
+des-dsr (0.20-1) stable; urgency=low
+
+  * New upstream release 0.20
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 02:50:21 +0100
+
+des-dsr (0.19-1) stable; urgency=low
+
+  * New upstream release 0.19
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 02:28:32 +0100
+
+des-dsr (0.18-1) stable; urgency=low
+
+  * New upstream release 0.18
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 01:47:08 +0100
+
+des-dsr (0.17-1) stable; urgency=low
+
+  * New upstream release 0.17
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 01:33:47 +0100
+
+des-dsr (0.16-1) stable; urgency=low
+
+  * New upstream release 0.16
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Mon, 11 Jan 2010 00:59:22 +0100
+
+des-dsr (0.15-1) stable; urgency=low
+
+  * New upstream release 0.15
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 23:01:08 +0100
+
+des-dsr (0.14-1) stable; urgency=low
+
+  * New upstream release 0.14
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 22:17:25 +0100
+
+des-dsr (0.13-1) stable; urgency=low
+
+  * New upstream release 0.13
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 21:40:21 +0100
+
+des-dsr (0.12-1) stable; urgency=low
+
+  * New upstream release 0.12
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 20:37:29 +0100
+
+des-dsr (0.11-1) stable; urgency=low
+
+  * New upstream release 0.11
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 01:36:11 +0100
+
+des-dsr (0.10-1) stable; urgency=low
+
+  * New upstream release 0.10
+  * Debugging symbols in package des-dsr-dbg
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 01:13:42 +0100
+
+des-dsr (0.9-1) stable; urgency=low
+
+  * New upstream release 0.9
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 00:34:10 +0100
+
+des-dsr (0.8-1) stable; urgency=low
+
+  * New upstream release 0.8
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sun, 10 Jan 2010 00:15:13 +0100
+
+des-dsr (0.7-1) stable; urgency=low
+
+  * New upstream release 0.7
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 23:37:36 +0100
+
+des-dsr (0.6-1) stable; urgency=low
+
+  * New upstream release 0.6
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 23:30:49 +0100
+
+des-dsr (0.5-1) stable; urgency=low
+
+  * New upstream release 0.5
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 23:15:03 +0100
+
+des-dsr (0.4-1) stable; urgency=low
+
+  * New upstream release 0.4
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 22:02:39 +0100
+
+des-dsr (0.3-1) stable; urgency=low
+
+  * New upstream release 0.3
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 20:51:43 +0100
+
+des-dsr (0.2-1) stable; urgency=low
+
+  * New upstream release 0.2
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Sat, 09 Jan 2010 20:32:47 +0100
+
+des-dsr (0.1-1) stable; urgency=low
+
+  * Initial release. 
+
+ -- David Gutzmann <gutzmann@inf.fu-berlin.de>  Fri, 08 Jan 2010 18:41:08 +0100

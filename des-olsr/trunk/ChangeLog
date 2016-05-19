@@ -1,0 +1,75 @@
+20091214
+    - first public release
+
+20091219
+    - TC and HELLO hold time bug fixed.
+
+20100102
+    - added logging of packet routing
+
+20100103
+    - routing logging data format changed
+    - added setting to change metric between PLR and HC
+
+20100109
+    - adapted for libdessert0.87
+    - TC sequence number assignment bug fixed
+
+20100116
+    - all outgoing packets are now uniquely identified with sequence number + src + dest
+
+20100321
+    - ETX metric added
+
+20100425
+    - new MPR Selection Algorithm. Selection on link quality.
+    - Many bugs fixed.
+
+20100529
+    - additive path ETX metric added, according to "Packet Sequence Number based ETX Metric for Mobile Ad Hoc Networks" paper.
+
+20101007
+    - Minor changes
+    - Added TTL decrease callback
+    - Current version 1.3
+
+20110207
+    - cleared code e.g. deleted unused variables
+    - more cli getter and setter for some daemon parameters
+    - hello_size/hello_interval
+    - tc_size/tc_interval
+
+20110209
+    - minor changes
+    - time intervals now are specified in milliseconds
+
+20110301
+    - Released as 1.4
+
+20110306
+    - changing CLI "print" parameters to "show"
+    - adding CLI parameter to config file with comments
+    - unifying routing tables to the structure: destination | next hop | out iface addr | daemon specifc
+    - changing "metric x" CLI parameter to "set metric x" and fixing crash bug
+
+20110323
+    - added android compatibility
+    - added android make target
+    - added "android.files" directory
+
+20110610
+    - Code cleanup
+    - Added rt interval that can be modified via CLI
+    - Released as 1.5
+
+20110720
+    - Renamed parameters
+    - Fixed bug in TC and HELLO handling
+    - Usage of new libdessert features
+    - Released as 1.6
+
+20110722
+    - "show metric" command
+    - Merged ETT branch
+    - Code cleanup
+    - Released as 1.7

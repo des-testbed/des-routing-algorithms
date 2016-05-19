@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchOptions>
+	<Spacer description="Routing Parameters"/>
+	<Integer name="hellointerval" default="2" minValue="1" description="HELLO Interval (sec)" />
+	<Integer name="tcinterval" default="5" minValue="1" description="TC Interval (sec)" />
+	<Integer name="validitycoeff" default="20" minValue="1" description="Validity Time Coefficient" />
+	<Integer name="willingness" default="3" minValue="0" maxValue="7" description="Broadcast Re-Send Willingness" />
+	<List name="metric" default="ETX" description="Routing Metric">
+		<Item value="PLR"/>
+		<Item value="HC"/>
+		<Item value="ETX"/>
+		<Item value="ETX-ADD"/>
+	</List>
+	<Integer name="windowsize" default="50" minValue="1" description="PLR/ETX Window Size" />
+
+	<Spacer description="Logging"/>
+	<List name="loglevel" default="info" description="Log Level">
+		<Item value="debug"/>
+		<Item value="info"/>
+		<Item value="notice"/>
+		<Item value="warning"/>
+		<Item value="error"/>
+		<Item value="critical"/>
+		<Item value="mergency"/>	<!-- full name is not used at all instead the first character counts -->
+	</List>
+	<Boolean name="useRingbuffer" default="true" trueValue="" falseValue="! " description="Use ringbuffer logging" />
+	<Integer name="ringbufferSize" default="64" minValue="1" maxValue="128" description="Ringbuffer size" />
+</LaunchOptions>

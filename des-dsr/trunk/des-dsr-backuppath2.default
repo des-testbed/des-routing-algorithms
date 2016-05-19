@@ -1,0 +1,9 @@
+# Config file for package des-dsr-backuppath2
+PIDFILE="/var/run/des-dsr-backuppath2.pid"
+DAEMON_OPTS="/etc/des-dsr-backuppath2.conf"
+TAP_NAME=tap0
+TAP_IP=10.0.0.1
+TAP_NETMASK=255.255.255.0
+CLI_PORT=4519
+IFACE=eth0
+LOGFILE="/var/log/des-dsr-backuppath2.log"
