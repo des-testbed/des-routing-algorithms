@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: des-namtab@packages.debian.org\n"
+"POT-Creation-Date: 2010-03-31 00:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:2001
+msgid "Name of TAP interface:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:2001
+msgid ""
+"Please specify the name of the TAP interface that is used by the  routing "
+"daemon, e.g. \"tap0\"."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:3001
+msgid "Default name assigned for TAP interface"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:3001
+msgid ""
+"The name \"tap0\" will be assigned to the TAP interface used by the routing "
+"daemon. You can change the name by editing the configuration file /etc/"
+"default/des-namtab."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:4001
+msgid "IPv4 address of TAP interface:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:4001
+msgid ""
+"Please specify an IPv4 address to assign to the TAP interface that is used "
+"by the routing daemon. If you leave this field empty, a default address will "
+"be used (10.0.0.1)."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../des-namtab.templates:5001
+msgid "IPv4 address is invalid"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../des-namtab.templates:5001
+msgid ""
+"The IPv4 address you entered is invalid. You can enter the IPv4 address "
+"again until it is valid or you leave the field empty."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:6001
+msgid "Default IPv4 address assigned for TAP interface"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:6001
+msgid ""
+"The IPv4 address \"10.0.0.1\" will be assigned to the TAP interface used  by "
+"the routing daemon. You can change the address by editing the  configuration "
+"file /etc/default/des-namtab."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:7001
+msgid "Netmask of TAP interface:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:7001
+msgid ""
+"Please specify a netmask to assign to the TAP interface that is used by the "
+"routing daemon. If you leave this field empty, a default address will be "
+"used (255.255.255.0)."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:8001
+msgid "Default netmask assigned for TAP interface"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:8001
+msgid ""
+"The netmask 255.255.255.0 will be assigned to the TAP interface used by the "
+"routing daemon. You can change the netmask by editing the  configuration "
+"file /etc/default/des-namtab."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:9001
+msgid "Port of the CLI:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:9001
+msgid ""
+"The routing daemon provides a command line interface (CLI) similiar to Cisco "
+"IOS. You have to provide a TCP port to make the CLI available."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:10001
+msgid "Default port number for the CLI"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:10001
+msgid ""
+"The TCP port number \"4519\" will be used for the command line interface. "
+"You can change the port by editing the configuration file /etc/default/des-"
+"namtab."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:11001
+msgid "Interfaces to use for routing:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:11001
+msgid ""
+"Please specify the interfaces you want to use with the routing daemon. You "
+"can specify multiple interfaces as comma-separated list, e.g. \"eth0, wlan0, "
+"pan0\". If you leave this field empty, a default interface will be used."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:12001
+msgid "Default interface used for routing"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:12001
+msgid ""
+"The interface \"eth0\" will be used by the routing daemon. You can change "
+"the name by editing the configuration file /etc/default/des-namtab."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:13001
+msgid "PID file:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../des-namtab.templates:13001
+msgid ""
+"The process id is written to this file once the daemon has started. If you "
+"leave this field empty, a default file name will be used."
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:14001
+msgid "Default PID file"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../des-namtab.templates:14001
+msgid ""
+"The process id will be written to \"/var/run/des-namtab.pid\". You can "
+"change the file name by editing the configuration file /etc/default/des-"
+"namtab."
+msgstr ""

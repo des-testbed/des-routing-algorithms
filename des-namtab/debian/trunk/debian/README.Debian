@@ -1,0 +1,6 @@
+des-namtab for Debian
+---------------------
+
+* Added debconf configuration to upstream version
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Fr, 10 Sep 2010 11:10:12 +0200

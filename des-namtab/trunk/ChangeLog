@@ -1,0 +1,18 @@
+20100102 - added logging of packet routing
+
+20100103 - routing logging data format changed
+
+20100104 - OGM Precursor BUG seems to be fixed
+
+20100109 - libdessert0.87
+		 - packet sequence number bug fixed
+
+20100124 - to many changes and fixes to write ;-)
+
+20100910 - Updated Makefile and configuration files
+
+20101006 - Minor changes
+         - Added TTL decrease callback
+         - Current version 1.2
+
+20110301 - Released as 1.3
