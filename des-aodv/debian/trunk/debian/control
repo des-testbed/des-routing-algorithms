@@ -1,0 +1,25 @@
+Source: des-aodv
+Section: net
+Priority: extra
+Maintainer: Bastian Blywis <blywis@inf.fu-berlin.de>
+Uploaders: Wladimir Degtjarew <wdegtjarew@googlemail.com>
+Build-Depends: debhelper (>= 7), po-debconf, docbook-to-man, libdessert1-dev, uthash-dev
+Standards-Version: 3.9.1
+Homepage: http://www.des-testbed.net/
+
+Package: des-aodv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: AODV routing daemon based on libdessert
+ Implementation of the Ad-Hoc On-demand Distance Vector (AODV) routing protocol
+ (RFC 3561) based on the DES-SERT routing framework. The daemon deviates from
+ the RFC in some regard, e.g., links are always monitored for bidirectionality.
+
+Package: des-aodv-dbg
+Architecture: any
+Section: debug
+Depends: des-aodv (= ${binary:Version}), ${misc:Depends}
+Description: AODV routing based on libdessert (debugging symbols)
+ Debugging symbols for the AODV routing daemon based on the DES-SERT
+ routing framework. You only need this package to debug des-aodv, e.g.,
+ when a segmentation fault is encountered.

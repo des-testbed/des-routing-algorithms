@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchOptions>
+    <Spacer description="Logging"/>
+    <List name="loglevel" default="info" description="Log Level">
+        <Item value="debug"/>
+        <Item value="info"/>
+        <Item value="notice"/>
+        <Item value="warning"/>
+        <Item value="error"/>
+        <Item value="critical"/>
+        <Item value="mergency"/>	<!-- full name is not used at all instead the first character counts -->
+    </List>
+    <List name="metric" default="AODV_METRIC_HOP_COUNT">
+        <Item description="Hop count" value="AODV_METRIC_HOP_COUNT"/>
+        <Item description="ETX" value="AODV_METRIC_ETX"/>
+        <Item description="ETT" value="AODV_METRIC_ETT"/>
+    </List>
+    <Integer name="HELLO size" default="128" minValue="1" maxValue="1024" description="set HELLO size"/>
+    <Integer name="HELLO interval" default="2" minValue="1" maxValue="60" description="set HELLO interval"/>
+    <Integer name="RREQ size" default="128" minValue="1" maxValue="1024" description="set RREQ size"/>
+    <Integer name="RREQ size" default="128" minValue="1" maxValue="1024" description="set RREQ size"/>
+    <Integer name="gossip p" default="100" minValue="0" maxValue="100" description="set gossip p value"/>
+    <Boolean name="shortcut" default="false" trueValue="1" falseValue="0" description="set shortcut true/false"/>
+    <Boolean name="verbose" default="false" trueValue="1" falseValue="0" description="Verbose Messages" />
+    <Boolean name="useRingbuffer" default="true" trueValue="" falseValue="! " description="Use ringbuffer logging" />
+    <Integer name="ringbufferSize" default="64" minValue="1" maxValue="128" description="Ringbuffer size" />
+</LaunchOptions>
+

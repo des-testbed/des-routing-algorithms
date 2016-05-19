@@ -1,0 +1,43 @@
+20091128 - changed framework support to libdessert0.86
+
+20091214 - first public release
+
+20100102 - added logging of packet routing
+
+20100103 - routing logging data format changed
+
+20100109 - libdessert0.87
+		 - RERR message format changed. Similar bugs fixed
+
+20100513 - libdessert1
+         - Reimplementation. Symetric Path AODV
+
+20100909 - Cleaned up Makefile and tarball
+         - Updated etc files
+
+20101006 - Minor changes
+         - Added TTL decrease callback
+         - Current version 1.2
+
+20110114 - aodv and aodv-mp merged
+         - more parameter flexibilty
+
+20110207 - cleared code e.g. deleted unused variables
+         - more cli getter and setter for some daemon parameters
+		 - hello_size/hello_interval
+		 - rreq_size
+
+20110209 - minor changes
+         - time intervals now are specified in milliseconds
+
+20110306 - changing CLI "print" parameters to "show"
+         - adding CLI parameter to config file with comments
+         - unifying routing tables to the streucture: destination | next hop | out iface addr | daemon specifc
+
+20110315 - removed all .mk files and instead added all dependencies to the top level Makefile
+         - added #IFDEFs needed for "android" make target
+         - added "android" subdirectory, containing all files needed for the dessert-manager application (android)
+
+20110612 - Renamed CLI commands
+         - Code cleanup
+         - Version 1.5

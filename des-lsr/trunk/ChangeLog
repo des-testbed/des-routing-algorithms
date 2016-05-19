@@ -1,0 +1,8 @@
+20110831 - version 0.3
+    - changes to support new libdessert 1.12
+    - option to show RT in CLI
+    - fixed fatal bug, that provokes SegFault
+20110323 - version 0.2
+    - added android compatibility
+20100909 - version 0.1
+    - initial version

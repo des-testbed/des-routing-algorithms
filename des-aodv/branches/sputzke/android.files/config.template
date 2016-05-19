@@ -1,0 +1,7 @@
+! set logging
+%useRingbuffer%logging ringbuffer %ringbufferSize%
+loglevel %loglevel%
+
+! set verbose mode
+set verbose %verbose%
+

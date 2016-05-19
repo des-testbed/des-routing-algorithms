@@ -1,0 +1,9 @@
+# Config file for package des-lsr
+PIDFILE="/var/run/des-lsr.pid"
+DAEMON_OPTS="des-lsr.conf"
+TAP_NAME=tap0
+TAP_IP=$(calc_ip 4)
+TAP_NETMASK=255.255.0.0
+CLI_PORT=4519
+IFACE=eth1
+LOGFILE="/var/log/des-lsr.log"

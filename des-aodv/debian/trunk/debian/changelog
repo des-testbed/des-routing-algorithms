@@ -1,0 +1,41 @@
+des-aodv (1.5-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@zedat.fu-berlin.de>  Fri, 10 Jun 2011 16:49:01 +0200
+
+des-aodv (1.4-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Tue, 01 Mar 2011 13:04:46 +0100
+
+des-aodv (1.3-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Ferhat Beyaz <fbeyaz88@googlemail.com>  Fri, 14 Jan 2011 16:17:00 +0200
+
+des-aodv (1.2-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Wed, 06 Oct 2010 17:56:27 +0200
+
+des-aodv (1.1-1) stable; urgency=low
+
+  * New upstream release
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 09 Sep 2010 15:36:00 +0200
+
+des-aodv (1.0-2) stable; urgency=low
+
+  * First revision after end of thesis
+
+ -- Bastian Blywis <blywis@inf.fu-berlin.de>  Thu, 09 Sep 2010 13:50:15 +0200
+
+des-aodv (1.0-1) stable; urgency=low
+
+  * Initial release
+
+ -- Wladimir Degtjarew <wdegtjarew@googlemail.com>  Fri, 14 May 2010 00:33:47 +0200
